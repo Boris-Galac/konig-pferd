@@ -1,0 +1,73 @@
+.hero {
+  position: relative;
+  height: 100%;
+}
+.hero .container {
+  height: 100%;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #00000059;
+  z-index: -1;
+}
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.hero__wrapper {
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
+.hero__content-wrapper {
+  margin: auto;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+.hero__headline {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: clamp(3rem, 7vw, 6rem);
+}
+
+.hero__language-dropdown {
+  position: absolute;
+  top: 5rem;
+  left: 0.5rem;
+  display: grid;
+  place-items: center;
+}
+.hero__language-dropdown-label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  width: 10ch;
+  line-height: 14px;
+  margin-bottom: 5px;
+}
+.hero__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: #ffffff17;
+  backdrop-filter: blur(5px);
+}
+.hero__footer-wrapper {
+}
+.hero__footer-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.hero__footer-subheadline {
+}

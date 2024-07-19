@@ -1,0 +1,42 @@
+.project-counter {
+  color: var(--dark-font);
+}
+.project-counter::before {
+  content: "";
+  position: absolute;
+  background: url("/src/assets/images/project-counter-overlay.jpg") no-repeat
+    center center/cover;
+  inset: 0;
+  z-index: -1;
+}
+.project-counter__inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-counter-h2-heading {
+  text-align: center;
+}
+.project-counter-h2-heading.section-h2-heading::after {
+  transform: translateX(-50%);
+  left: 50%;
+}
+.counter-box {
+  display: grid;
+  place-items: center;
+}
+.count {
+  font-size: 5rem;
+  font-weight: 100;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.count__caption {
+  font-size: 1.2rem;
+}
+.project-counter-separator {
+  margin: auto;
+}
+.project-icon {
+  width: 40px;
+}

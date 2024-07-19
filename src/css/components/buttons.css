@@ -1,0 +1,47 @@
+button {
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__cta {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  width: max-content;
+  border-radius: 100vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 2px solid var(--white);
+  gap: 1rem;
+  color: var(--white);
+  background: linear-gradient(to right, hsl(39, 38%, 39%), #477183);
+}
+.play-thumbnail-icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.play-video-btn {
+}
+.thumbnail-interview-btn {
+  position: relative;
+  border-radius: 10px;
+  outline: 3px solid var(--white);
+  box-shadow: 0 0 1rem var(--white);
+}
+.call-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+.call-btn[data-active="false"] {
+  opacity: 0;
+  pointer-events: none;
+}
+.call-btn[data-active="true"] {
+  opacity: 1;
+  pointer-events: visible;
+}

@@ -1,0 +1,30 @@
+.offer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/src/assets/images/offer-overlay.jpg") no-repeat center
+    center/cover;
+  z-index: -1;
+}
+.offer__wrapper {
+  display: grid;
+  gap: 1rem;
+}
+.offer-card {
+  display: flex;
+  gap: 0.5rem;
+  background: linear-gradient(to right, #0000006e, #0000001c);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.offer-card__text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.offer-card__heading {
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px;
+}
+.offer-card__paragraph {
+  font-weight: 100;
+}

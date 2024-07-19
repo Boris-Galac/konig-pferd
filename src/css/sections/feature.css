@@ -1,0 +1,44 @@
+.feature {
+}
+.feature::before {
+  content: "";
+  position: absolute;
+  background: url("/src/assets/images/feature-overlay.jpg") no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  inset: 0;
+  z-index: -1;
+}
+.feature__wrapper {
+}
+.feature-subheadline {
+  margin-bottom: 1.5rem;
+}
+.feature__inner-wrapper {
+}
+.feature__side-row {
+  display: grid;
+  gap: 1rem;
+}
+.feature-card {
+  background-color: #00000030;
+  border-radius: 7px;
+  padding: 10px;
+  display: flex;
+}
+.feature-card img {
+  object-fit: contain;
+}
+.feature__text-row {
+}
+.feature-h3-heading {
+  margin-bottom: 7px;
+}
+.feature__paragraph {
+}
+.feature__side-row:last-child .feature-card img {
+  order: 2;
+}
+.feature__side-row:first-child .feature-card .feature__text-row {
+  text-align: right;
+}
