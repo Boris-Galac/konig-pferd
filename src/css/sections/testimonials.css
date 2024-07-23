@@ -1,5 +1,6 @@
 .testimonials {
   color: var(--dark-font);
+  padding-block: min(18vw, 15rem);
 }
 .testimonials::before {
   content: "";
@@ -47,4 +48,6 @@
   transform: translateX(-50%);
   left: 50%;
   width: min(15vw, 3rem);
+}
+@media (min-width: 1200px) {
 }

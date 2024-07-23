@@ -36,7 +36,6 @@
   font-weight: 300;
   font-size: clamp(3rem, 7vw, 6rem);
 }
-
 .hero__language-dropdown {
   position: absolute;
   top: 5rem;

@@ -65,6 +65,7 @@ a {
 }
 .feature .section-h2-heading {
   font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 .feature .section-h2-heading::after {
   background-color: var(--white);

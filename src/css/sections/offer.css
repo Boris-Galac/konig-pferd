@@ -28,3 +28,10 @@
 .offer-card__paragraph {
   font-weight: 100;
 }
+@media (min-width: 1300px) {
+  .offer__wrapper {
+    display: grid;
+    gap: 1rem;
+    width: 62%;
+  }
+}

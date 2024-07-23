@@ -25,12 +25,20 @@ button {
   left: 50%;
 }
 .play-video-btn {
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px white);
+}
+.play-video-btn > * {
+  pointer-events: none;
 }
 .thumbnail-interview-btn {
   position: relative;
   border-radius: 10px;
   outline: 3px solid var(--white);
   box-shadow: 0 0 1rem var(--white);
+}
+.thumbnail-interview-btn--desktop {
+  display: none;
 }
 .call-btn {
   position: fixed;
@@ -60,4 +68,22 @@ button {
 }
 .submit-btn:hover {
   background-color: var(--dark-font);
+}
+@media (min-width: 1152px) {
+  .thumbnail-interview-btn--mobile {
+    display: none;
+  }
+  .thumbnail-interview-btn--desktop {
+    display: block;
+  }
+  .hero__footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero__footer-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-around;
+  }
 }

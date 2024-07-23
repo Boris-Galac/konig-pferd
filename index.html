@@ -23,7 +23,19 @@
         <li class="nav__item"><a href="#" class="nav__link">About</a></li>
         <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
       </ul>
-      <button class="thumbnail-interview-btn">
+      <div class="footer__contact">
+        <a href="#" class="footer__phone-call"><img class="icon" src="/src/assets/icons/footer-phone-icon.svg"
+            alt="phone call icon">+43 (0) 660 349 19 88</a>
+        <div class="footer__socials">
+          <a href="#" target="_blank"><img class="icon" src="/src/assets/icons/footer-tik-tok-icon.svg"
+              aria-hidden="true"></a>
+          <a href="#" target="_blank"><img class="icon" src="/src/assets/icons/footer-facebook-icon.svg"
+              aria-hidden="true"></a>
+          <a href="#" target="_blank"><img class="icon" src="/src/assets/icons/footer-instagram-icon.svg"
+              aria-hidden="true"></a>
+        </div>
+      </div>
+      <button class="thumbnail-interview-btn thumbnail-interview-btn--mobile">
         <img src="/src/assets/images/interview-thumbnail.jpg" alt="konig pferd image" />
         <img src="/src/assets/icons/play-thumbnail-icon.svg" alt="play icon" class="play-thumbnail-icon" />
       </button>
@@ -64,9 +76,13 @@
             <h2 class="hero__footer-subheadline">
               SPEZIALISIERTE SÄTTEL FÜR IHR PFERD
             </h2>
-            <a href="#" class="hero__cta" role="button">Entdecken Sie Ihren Sattel
+            <a href="#offer" class="hero__cta" role="button">Entdecken Sie Ihren Sattel
               <img src="/src/assets/icons/cta-arrow-icon.svg" alt="right arrow" /></a>
           </div>
+          <button class="thumbnail-interview-btn thumbnail-interview-btn--desktop">
+            <img src="/src/assets/images/interview-thumbnail.jpg" alt="konig pferd image" />
+            <img src="/src/assets/icons/play-thumbnail-icon.svg" alt="play icon" class="play-thumbnail-icon" />
+          </button>
         </div>
       </div>
       <a href="#" class="call-btn" data-active="false"><img src="/src/assets/icons/phone-call-btn.svg"
@@ -77,35 +93,37 @@
       <img src="/src/assets/images/dietmar-bottom-right-radius-element.svg" aria-hidden="true"
         class="dietmar-bottom-right-element" />
       <div class="container">
-        <img src="/src/assets/images/dietmar-img.png" alt="dietmar and horse" class="dietmar__img-desktop" />
-        <article class="dietmar__article">
-          <h2 class="h2-heading dietmar-h2-heading">
-            <span class="dietmar--first-span">Dietmar</span>
-            <span class="dietmar--second-span">Kulczycki</span>
-          </h2>
-          <img src="/src/assets/images/dietmar-img.png" alt="dietmar and horse" class="dietmar__img-mobile" />
-          <p class="dietmar-subheadline">
-            Experte für Sattelverkauf und Sattelanpassung in Österreich (ausg.
-            Vorarlberg & Tirol)
-          </p>
-          <div class="dietmar__paragraph-wrapper">
-            <p class="paragraph">
-              Ich treffe persönlich eine Vorselektion und bringe den richtigen
-              Sattel zum Pferd/Reiter:in-Paar und nicht umgekehrt. Da ich
-              selbst aktiv Dressur bis zur schweren Klasse reite, selbst
-              Springturniere absolviert habe und mir das Wohl aller Pferde
-              sehr am Herzen liegt, verwende ich nur Produkte von Herstellern,
-              die sich bei meiner persönlichen Testung bewährt haben.
+        <div class="dietmar__wrapper">
+          <img src="/src/assets/images/dietmar-img.png" alt="dietmar and horse" class="dietmar__img-desktop" />
+          <article class="dietmar__article">
+            <h2 class="h2-heading dietmar-h2-heading">
+              <span class="dietmar--first-span">Dietmar</span>
+              <span class="dietmar--second-span">Kulczycki</span>
+            </h2>
+            <img src="/src/assets/images/dietmar-img.png" alt="dietmar and horse" class="dietmar__img-mobile" />
+            <p class="dietmar-subheadline">
+              Experte für Sattelverkauf und Sattelanpassung in Österreich (ausg.
+              Vorarlberg & Tirol)
             </p>
-            <p class="paragraph">
-              Langes Studium der Anatomie und Bewegungsphysiologie an der Vet.
-              Med. Universität in Wien und eine internationale
-              Sattlerausbildung mit Schwerpunkt Saddlefitting haben mir das
-              handwerkliche Rüstzeug sowie das notwendige breite Wissen um die
-              Sattelpassform ermöglicht.
-            </p>
-          </div>
-        </article>
+            <div class="dietmar__paragraph-wrapper">
+              <p class="paragraph">
+                Ich treffe persönlich eine Vorselektion und bringe den richtigen
+                Sattel zum Pferd/Reiter:in-Paar und nicht umgekehrt. Da ich
+                selbst aktiv Dressur bis zur schweren Klasse reite, selbst
+                Springturniere absolviert habe und mir das Wohl aller Pferde
+                sehr am Herzen liegt, verwende ich nur Produkte von Herstellern,
+                die sich bei meiner persönlichen Testung bewährt haben.
+              </p>
+              <p class="paragraph">
+                Langes Studium der Anatomie und Bewegungsphysiologie an der Vet.
+                Med. Universität in Wien und eine internationale
+                Sattlerausbildung mit Schwerpunkt Saddlefitting haben mir das
+                handwerkliche Rüstzeug sowie das notwendige breite Wissen um die
+                Sattelpassform ermöglicht.
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
     <!-- projects counter section-->
@@ -148,7 +166,7 @@
       </div>
     </section>
     <!-- offer section -->
-    <section class="offer">
+    <section class="offer" id="offer">
       <div class="container">
         <h2 class="h2-heading section-h2-heading offer-h2-heading">
           Konzept Konig Pferd garantiert
@@ -506,11 +524,11 @@
       </div>
     </section>
     <!-- yt video -->
-    <section class="yt">
+    <!-- <section class="yt">
       <iframe src="https://www.youtube.com/embed/lc7nIO1WrYE" title="ZOSAK &amp; KULCZYCKI" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
+    </section> -->
     <!-- contact section -->
     <section class="contact">
       <div class="container">

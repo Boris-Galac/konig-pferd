@@ -66,4 +66,30 @@
   .dietmar-top-left-element {
     display: block;
   }
+  .dietmar__wrapper {
+    display: flex;
+  }
+  .dietmar__img-desktop {
+    display: block;
+    scale: 1.4;
+    transform: translateY(74px) translateX(-38%);
+  }
+  .dietmar__img-mobile {
+    display: none;
+  }
+  .dietmar-h2-heading {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 1500px) {
+  .dietmar__img-desktop {
+    position: absolute;
+    display: block;
+    scale: 1.4;
+    transform: translateY(74px) translateX(-38%);
+  }
+  .dietmar__article {
+    width: 62ch;
+    margin-left: auto;
+  }
 }

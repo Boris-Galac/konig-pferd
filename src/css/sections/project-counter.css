@@ -14,7 +14,6 @@
   flex-direction: column;
   gap: 2rem;
 }
-
 .project-counter-h2-heading {
   text-align: center;
 }
@@ -39,4 +38,9 @@
 }
 .project-icon {
   width: 40px;
+}
+@media (min-width: 1024px) {
+  .project-counter__inner-wrapper {
+    flex-direction: row;
+  }
 }

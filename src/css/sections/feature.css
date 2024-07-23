@@ -9,13 +9,14 @@
   inset: 0;
   z-index: -1;
 }
-.feature__wrapper {
-}
+
 .feature-subheadline {
   margin-bottom: 1.5rem;
+  max-width: 80ch;
+  text-align: center;
+  margin-inline: auto;
 }
-.feature__inner-wrapper {
-}
+
 .feature__side-row {
   display: grid;
   gap: 1rem;
@@ -29,13 +30,11 @@
 .feature-card img {
   object-fit: contain;
 }
-.feature__text-row {
-}
+
 .feature-h3-heading {
   margin-bottom: 7px;
 }
-.feature__paragraph {
-}
+
 .feature__side-row:last-child .feature-card img {
   order: 2;
 }
@@ -53,4 +52,17 @@
 }
 .feature-top-right-radius {
   right: 0;
+}
+@media (min-width: 1024px) {
+  /* .feature__wrapper {
+    display: flex;
+  } */
+  .feature .container {
+    width: min(100% - 32px, 1274px);
+    margin-inline: auto;
+  }
+  .feature__inner-wrapper {
+    display: grid;
+    grid-template-columns: 35% 25% 35%;
+  }
 }

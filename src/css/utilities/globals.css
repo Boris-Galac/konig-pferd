@@ -5,3 +5,32 @@
 .icon {
   object-fit: contain;
 }
+.hero-overlay {
+  display: grid;
+  place-items: center;
+  background-color: #00000091;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  animation: modal-video 2s forwards;
+}
+@keyframes modal-video {
+  from {
+    opacity: 0;
+    scale: 0;
+    clip-path: circle(0% at 50% 50%);
+  }
+  to {
+    clip-path: circle(70.7% at 50% 50%);
+    opacity: 1;
+    scale: 1;
+  }
+}
+.modal-video {
+  width: 80%;
+  height: 60%;
+  border-radius: 1rem;
+  box-shadow: 0 0 15rem #3e3edd;
+}
