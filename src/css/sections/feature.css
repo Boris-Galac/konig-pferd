@@ -42,3 +42,15 @@
 .feature__side-row:first-child .feature-card .feature__text-row {
   text-align: right;
 }
+.feature-top-left-radius,
+.feature-top-right-radius {
+  position: absolute;
+  top: 0;
+  width: 15vw;
+}
+.feature-top-left-radius {
+  left: 0;
+}
+.feature-top-right-radius {
+  right: 0;
+}

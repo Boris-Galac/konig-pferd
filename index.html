@@ -1,494 +1,604 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website</title>
-    <meta name="description" content="Lorem ipsum dolor sit amet." />
-    <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="lorem, ipsum, dolor, sit, amet" />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="/src/css/style.css" />
-    <script defer src="/src/js/main.js"></script>
-  </head>
-  <body>
-    <header class="header" data-active="true">
-      <a href="index.html" class="header__logo"
-        ><img src="/src/assets/icons/logo.svg" alt="logo"
-      /></a>
-      <nav class="nav" id="nav" aria-expanded="false">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-        </ul>
-        <button class="thumbnail-interview-btn">
-          <img
-            src="/src/assets/images/interview-thumbnail.jpg"
-            alt="konig pferd image"
-          />
-          <img
-            src="/src/assets/icons/play-thumbnail-icon.svg"
-            alt="play icon"
-            class="play-thumbnail-icon"
-          />
-        </button>
-      </nav>
-      <button
-        class="ham-btn"
-        aria-label="ham button"
-        data-active="false"
-        tabindex="0"
-        aria-controls="nav"
-      >
-        <div class="ham-line"></div>
-        <div class="ham-line"></div>
-        <div class="ham-line"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="lorem, ipsum, dolor, sit, amet" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/src/css/style.css" />
+  <script defer src="/src/js/main.js"></script>
+</head>
+
+<body>
+  <header class="header" data-active="true">
+    <a href="index.html" class="header__logo"><img src="/src/assets/icons/logo.svg" alt="logo" /></a>
+    <nav class="nav" id="nav" aria-expanded="false">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="thumbnail-interview-btn">
+        <img src="/src/assets/images/interview-thumbnail.jpg" alt="konig pferd image" />
+        <img src="/src/assets/icons/play-thumbnail-icon.svg" alt="play icon" class="play-thumbnail-icon" />
       </button>
-    </header>
-    <main class="main">
-      <video
-        src="/src/assets/konig-pferd-ovelray-video.mp4"
-        autoplay
-        loop
-        muted
-        poster="/src/assets/images/thumbnail-splash-overlay.jpg"
-        preload="auto"
-        crossorigin="anonymous"
-        playsinline
-        disableremoteplayback
-        class="hero-video-overlay"
-      >
-        <source src="video.mp4" type="video/mp4" />
-      </video>
-      <!-- hero section -->
-      <section class="hero">
-        <div class="hero__language-dropdown">
-          <label class="hero__language-dropdown-label">select language</label>
-          <button>
-            <img src="/src/assets/icons/german-flag-icon.svg" alt="" />
-          </button>
-        </div>
-        <div class="container">
-          <div class="hero__wrapper">
-            <div class="hero__content-wrapper">
-              <h1 class="hero__headline">do it with passion or not at all!</h1>
-              <button class="play-video-btn">
-                <img src="/src/assets/icons/play-icon.svg" alt="" />
-              </button>
-            </div>
+    </nav>
+    <button class="ham-btn" aria-label="ham button" data-active="false" tabindex="0" aria-controls="nav">
+      <div class="ham-line"></div>
+      <div class="ham-line"></div>
+      <div class="ham-line"></div>
+    </button>
+  </header>
+  <main class="main">
+    <video src="/src/assets/konig-pferd-ovelray-video.mp4" autoplay loop muted
+      poster="/src/assets/images/thumbnail-splash-overlay.jpg" preload="auto" crossorigin="anonymous" playsinline
+      disableremoteplayback class="hero-video-overlay">
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+    <!-- hero section -->
+    <section class="hero">
+      <div class="hero__language-dropdown">
+        <label class="hero__language-dropdown-label">select language</label>
+        <button>
+          <img src="/src/assets/icons/german-flag-icon.svg" alt="" />
+        </button>
+      </div>
+      <div class="container">
+        <div class="hero__wrapper">
+          <div class="hero__content-wrapper">
+            <h1 class="hero__headline">do it with passion or not at all!</h1>
+            <button class="play-video-btn">
+              <img src="/src/assets/icons/play-icon.svg" alt="" />
+            </button>
           </div>
         </div>
-        <div class="hero__footer">
-          <div class="hero__footer-wrapper">
-            <div class="hero__footer-row">
-              <h2 class="hero__footer-subheadline">
-                SPEZIALISIERTE SÄTTEL FÜR IHR PFERD
-              </h2>
-              <a href="#" class="hero__cta" role="button"
-                >Entdecken Sie Ihren Sattel
-                <img
-                  src="/src/assets/icons/cta-arrow-icon.svg"
-                  alt="right arrow"
-              /></a>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="call-btn" data-active="false"
-          ><img src="/src/assets/icons/phone-call-btn.svg" alt="call phone"
-        /></a>
-      </section>
-      <!-- dietmar section -->
-      <section class="dietmar">
-        <img
-          src="/src/assets/images/dietmar-bottom-right-radius-element.svg"
-          aria-hidden="true"
-          class="dietmar-bottom-right-element"
-        />
-        <div class="container">
-          <img
-            src="/src/assets/images/dietmar-img.png"
-            alt="dietmar and horse"
-            class="dietmar__img-desktop"
-          />
-          <article class="dietmar__article">
-            <h2 class="h2-heading dietmar-h2-heading">
-              <span class="dietmar--first-span">Dietmar</span>
-              <span class="dietmar--second-span">Kulczycki</span>
+      </div>
+      <div class="hero__footer">
+        <div class="hero__footer-wrapper">
+          <div class="hero__footer-row">
+            <h2 class="hero__footer-subheadline">
+              SPEZIALISIERTE SÄTTEL FÜR IHR PFERD
             </h2>
-            <img
-              src="/src/assets/images/dietmar-img.png"
-              alt="dietmar and horse"
-              class="dietmar__img-mobile"
-            />
-            <p class="dietmar-subheadline">
-              Experte für Sattelverkauf und Sattelanpassung in Österreich (ausg.
-              Vorarlberg & Tirol)
-            </p>
-            <div class="dietmar__paragraph-wrapper">
-              <p class="paragraph">
-                Ich treffe persönlich eine Vorselektion und bringe den richtigen
-                Sattel zum Pferd/Reiter:in-Paar und nicht umgekehrt. Da ich
-                selbst aktiv Dressur bis zur schweren Klasse reite, selbst
-                Springturniere absolviert habe und mir das Wohl aller Pferde
-                sehr am Herzen liegt, verwende ich nur Produkte von Herstellern,
-                die sich bei meiner persönlichen Testung bewährt haben.
-              </p>
-              <p class="paragraph">
-                Langes Studium der Anatomie und Bewegungsphysiologie an der Vet.
-                Med. Universität in Wien und eine internationale
-                Sattlerausbildung mit Schwerpunkt Saddlefitting haben mir das
-                handwerkliche Rüstzeug sowie das notwendige breite Wissen um die
-                Sattelpassform ermöglicht.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-      <!-- projects counter section-->
-      <section class="project-counter">
-        <img
-          src="/src/assets/images/dietmar-top-left-radius-element.svg"
-          aria-hidden="true"
-          class="dietmar-top-left-element"
-        />
-        <img
-          src="/src/assets/images/top-left-mobile.svg"
-          aria-hidden="true"
-          class="dietmar-top-left-element--mobile"
-        />
-        <div class="container">
-          <h2 class="h2-heading section-h2-heading project-counter-h2-heading">
-            Aus Liebe zum Pferd
-          </h2>
-          <div class="project-counter__inner-wrapper">
-            <div class="counter-box">
-              <span class="count" data-num="456">0</span>
-              <span class="count__caption">Seit</span>
-              <img
-                src="/src/assets/icons/knight-project-icon.svg"
-                aria-hidden="true"
-                class="project-icon"
-              />
-            </div>
-            <img
-              src="/src/assets/images/project-counter-separator.png"
-              alt="project counter separator"
-              class="project-counter-separator"
-            />
-            <div class="counter-box">
-              <span class="count" data-num="2">0</span>
-              <span class="count__caption">Bundesländer</span>
-              <img
-                src="/src/assets/icons/location-project-icon.svg"
-                aria-hidden="true"
-                class="project-icon"
-              />
-            </div>
-            <img
-              src="/src/assets/images/project-counter-separator.png"
-              alt="project counter separator"
-              class="project-counter-separator"
-            />
-            <div class="counter-box">
-              <span class="count" data-num="538">0</span>
-              <span class="count__caption">Kunden</span>
-              <img
-                src="/src/assets/icons/person-project-icon.svg"
-                aria-hidden="true"
-                class="project-icon"
-              />
-            </div>
-            <img
-              src="/src/assets/images/project-counter-separator.png"
-              alt="project counter separator"
-              class="project-counter-separator"
-            />
-            <div class="counter-box">
-              <span class="count" data-num="1">0</span>
-              <span class="count__caption">eigene Pferde</span>
-              <img
-                src="/src/assets/icons/heart-project-icon.svg"
-                aria-hidden="true"
-                class="project-icon"
-              />
-            </div>
+            <a href="#" class="hero__cta" role="button">Entdecken Sie Ihren Sattel
+              <img src="/src/assets/icons/cta-arrow-icon.svg" alt="right arrow" /></a>
           </div>
         </div>
-      </section>
-      <!-- offer section -->
-      <section class="offer">
-        <div class="container">
-          <h2 class="h2-heading section-h2-heading offer-h2-heading">
-            Konzept Konig Pferd garantiert
+      </div>
+      <a href="#" class="call-btn" data-active="false"><img src="/src/assets/icons/phone-call-btn.svg"
+          alt="call phone" /></a>
+    </section>
+    <!-- dietmar section -->
+    <section class="dietmar">
+      <img src="/src/assets/images/dietmar-bottom-right-radius-element.svg" aria-hidden="true"
+        class="dietmar-bottom-right-element" />
+      <div class="container">
+        <img src="/src/assets/images/dietmar-img.png" alt="dietmar and horse" class="dietmar__img-desktop" />
+        <article class="dietmar__article">
+          <h2 class="h2-heading dietmar-h2-heading">
+            <span class="dietmar--first-span">Dietmar</span>
+            <span class="dietmar--second-span">Kulczycki</span>
           </h2>
-          <p class="offer-subheadline">
-            Sattelanpassung | Sattelverkauf | Sattel Passform Beurteilung und
-            Druckmessung (fast aller Sattelmarken)
+          <img src="/src/assets/images/dietmar-img.png" alt="dietmar and horse" class="dietmar__img-mobile" />
+          <p class="dietmar-subheadline">
+            Experte für Sattelverkauf und Sattelanpassung in Österreich (ausg.
+            Vorarlberg & Tirol)
           </p>
-          <div class="offer__wrapper">
-            <figure class="offer-card">
-              <img
-                src="/src/assets/icons/best-price-icon.svg"
-                class="icon offer-card__icon"
-              />
-              <div class="offer-card__text">
-                <h3 class="offer-card__heading">
-                  Bestes Preis-Leistungsverhältnis
-                </h3>
-                <p class="offer-card__paragraph">
-                  Lorem ipsum dolor sit amet consectetur. Arcu magna risus
-                  platea nunc ridiculus. Parturient euismod elit placerat sed
-                  non.
-                </p>
-              </div>
-            </figure>
-            <figure class="offer-card">
-              <img
-                src="/src/assets/icons/subscription-price-icon.svg"
-                class="icon offer-card__icon"
-              />
-              <div class="offer-card__text">
-                <h3 class="offer-card__heading">Faire Preis-Leistung</h3>
-                <p class="offer-card__paragraph">
-                  Meine Leistungen stehen in einem fairen
-                  Preis-Leistungsverhältnis. Ich besuche und berate Dich gerne
-                  vor Ort und nehme mir dafür genügend Zeit.
-                </p>
-              </div>
-            </figure>
-            <figure class="offer-card">
-              <img
-                src="/src/assets/icons/garantien-icon.svg"
-                class="icon offer-card__icon"
-              />
-              <div class="offer-card__text">
-                <h3 class="offer-card__heading">Passform Garantie</h3>
-                <p class="offer-card__paragraph">
-                  Mein Angebot ist markenübergreifend. Der Sattel wird nach
-                  sorgfältiger Auswahl persönlich erstangepasst, die genaue
-                  Passform wird garantiert.
-                </p>
-              </div>
-            </figure>
-            <figure class="offer-card">
-              <img
-                src="/src/assets/icons/check-person-icon.svg"
-                class="icon offer-card__icon"
-              />
-              <div class="offer-card__text">
-                <h3 class="offer-card__heading">Absolute Verlässlichkeit</h3>
-                <p class="offer-card__paragraph">
-                  König Pferd steht für ein Höchstmaß an Zuverlässigkeit bei
-                  zeitgerechter Terminvergabe. Sättel werden ohne Zeit- und
-                  Kaufzwang getestet.
-                </p>
-              </div>
-            </figure>
-            <figure class="offer-card">
-              <img
-                src="/src/assets/icons/quality-icon.svg"
-                class="icon offer-card__icon"
-              />
-              <div class="offer-card__text">
-                <h3 class="offer-card__heading">Mega Erfahrung</h3>
-                <p class="offer-card__paragraph">
-                  Mit Stolz kann ich auf ein langjähriges Erfahrungswissen
-                  zurückgreifen. Ich vertreibe nur Produkte, die ich persönlich
-                  getestet habe.
-                </p>
-              </div>
-            </figure>
-            <figure class="offer-card">
-              <img
-                src="/src/assets/icons/bulb-icon.svg"
-                class="icon offer-card__icon"
-              />
-              <div class="offer-card__text">
-                <h3 class="offer-card__heading">
-                  Wissen am neuesten Stand der Technik
-                </h3>
-                <p class="offer-card__paragraph">
-                  Lorem ipsum dolor sit amet consectetur. Arcu magna risus
-                  platea nunc ridiculus. Parturient euismod elit placerat sed
-                  non.
-                </p>
-              </div>
-            </figure>
-            <figure class="offer-card">
-              <img
-                src="/src/assets/icons/serious-person-icon.svg"
-                class="icon offer-card__icon"
-              />
-              <div class="offer-card__text">
-                <h3 class="offer-card__heading">Seriosität</h3>
-                <p class="offer-card__paragraph">
-                  Lorem ipsum dolor sit amet consectetur. Arcu magna risus
-                  platea nunc ridiculus. Parturient euismod elit placerat sed
-                  non.
-                </p>
-              </div>
-            </figure>
-          </div>
-        </div>
-      </section>
-      <!-- testimonials section -->
-      <section class="testimonials">
-        <img
-          src="/src/assets/images/triangle.png"
-          aria-hidden="true"
-          class="testiominals-triangle"
-        />
-        <div class="container">
-          <h3 class="h3-heading testimonial-heading">Kundenmeinung</h3>
-          <div class="testimonials__wrapper testimonial-swiper">
-            <div class="swiper-wrapper">
-              <article class="testimonial swiper-slide">
-                <p class="testimonial-paragraph">
-                  Für uns der Beste! Preis/Leistung stimmt zu 100%. Man wird
-                  sehr gut beraten und es wird auf die Bedürfnisse vom Reiter
-                  und vom Pferd eingegangen. Das Pferd wird genau vermessen und
-                  anschließend wird beim vorreiten geschaut ob wirklich alles
-                  paßt. Würden nie wo anders einen Sattel kaufen.
-                </p>
-                <span class="testimonial-name"
-                  >Natalie U. (Google rezension)</span
-                >
-              </article>
-              <article class="testimonial swiper-slide">
-                <p class="testimonial-paragraph">
-                  Für uns der Beste! Preis/Leistung stimmt zu 100%. Man wird
-                  sehr gut beraten und es wird auf die Bedürfnisse vom Reiter
-                  und vom Pferd eingegangen. Das Pferd wird genau vermessen und
-                  anschließend wird beim vorreiten geschaut ob wirklich alles
-                  paßt. Würden nie wo anders einen Sattel kaufen.
-                </p>
-                <span class="testimonial-name"
-                  >Natalie U. (Google rezension)</span
-                >
-              </article>
-              <article class="testimonial swiper-slide">
-                <p class="testimonial-paragraph">
-                  Für uns der Beste! Preis/Leistung stimmt zu 100%. Man wird
-                  sehr gut beraten und es wird auf die Bedürfnisse vom Reiter
-                  und vom Pferd eingegangen. Das Pferd wird genau vermessen und
-                  anschließend wird beim vorreiten geschaut ob wirklich alles
-                  paßt. Würden nie wo anders einen Sattel kaufen.
-                </p>
-                <span class="testimonial-name"
-                  >Natalie U. (Google rezension)</span
-                >
-              </article>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!-- feature section -->
-      <section class="feature">
-        <div class="container">
-          <div class="feature__wrapper">
-            <h2 class="h2-heading section-h2-heading">Der perfekte Sattel</h2>
-            <p class="feature-subheadline">
-              Liegt auf dem Pferderücken an der richtigen Stelle, gewährt durch
-              seine Lage dem Pferd immer optimale Bewegungsfreiheit und passt
-              auch dem Reiter.
+          <div class="dietmar__paragraph-wrapper">
+            <p class="paragraph">
+              Ich treffe persönlich eine Vorselektion und bringe den richtigen
+              Sattel zum Pferd/Reiter:in-Paar und nicht umgekehrt. Da ich
+              selbst aktiv Dressur bis zur schweren Klasse reite, selbst
+              Springturniere absolviert habe und mir das Wohl aller Pferde
+              sehr am Herzen liegt, verwende ich nur Produkte von Herstellern,
+              die sich bei meiner persönlichen Testung bewährt haben.
             </p>
-            <div class="feature__inner-wrapper">
-              <div class="feature__side-row">
-                <article class="feature-card">
-                  <img
-                    src="/src/assets/icons/first-icon.svg"
-                    alt="feature icon"
-                  />
-                  <div class="feature__text-row">
-                    <h3 class="feature-h3-heading">Sattelmodell</h3>
-                    <p class="feature__paragraph">
-                      Sattelänge, Kissenkanal und Braumbreite ist korrekt.
-                    </p>
-                  </div>
-                </article>
-                <article class="feature-card">
-                  <img
-                    src="/src/assets/icons/second-icon.svg"
-                    alt="feature icon"
-                  />
-                  <div class="feature__text-row">
-                    <h3 class="feature-h3-heading">Reiter:in</h3>
-                    <p class="feature__paragraph">
-                      Sattelmodell und Sitzgröße ist auf den/die Reiter:in
-                      abgestimmt.
-                    </p>
-                  </div>
-                </article>
-                <article class="feature-card">
-                  <img
-                    src="/src/assets/icons/third-icon.svg"
-                    alt="feature icon"
-                  />
-                  <div class="feature__text-row">
-                    <h3 class="feature-h3-heading">Flexiblität</h3>
-                    <p class="feature__paragraph">
-                      Lässt sich mit der ändernden Anatomie des Pferdes
-                      anpassen.
-                    </p>
-                  </div>
-                </article>
-              </div>
-              <img
-                src="/src/assets/images/seddle-img.png"
-                alt="seddle konig pferd"
-              />
-              <div class="feature__side-row">
-                <article class="feature-card">
-                  <img
-                    src="/src/assets/icons/fourth-icon.svg"
-                    alt="feature icon"
-                  />
-                  <div class="feature__text-row">
-                    <h3 class="feature-h3-heading">Widerristfreiheit</h3>
-                    <p class="feature__paragraph">
-                      Sattelänge, Kissenkanal und Braumbreite ist korrekt.
-                    </p>
-                  </div>
-                </article>
-                <article class="feature-card">
-                  <img
-                    src="/src/assets/icons/fifth-icon.svg"
-                    alt="feature icon"
-                  />
-                  <div class="feature__text-row">
-                    <h3 class="feature-h3-heading">Schwerpunkt</h3>
-                    <p class="feature__paragraph">
-                      Liegt in der Mitte, Schulter und Lende tragen kein
-                      Gewicht.
-                    </p>
-                  </div>
-                </article>
-                <article class="feature-card">
-                  <img
-                    src="/src/assets/icons/sixth-icon.svg"
-                    alt="feature icon"
-                  />
-                  <div class="feature__text-row">
-                    <h3 class="feature-h3-heading">Bewegungsfreiheit</h3>
-                    <p class="feature__paragraph">
-                      Ein korrekt angepasster Sattel bietet enorme
-                      Bewerungsfreiheit.
-                    </p>
-                  </div>
-                </article>
-              </div>
+            <p class="paragraph">
+              Langes Studium der Anatomie und Bewegungsphysiologie an der Vet.
+              Med. Universität in Wien und eine internationale
+              Sattlerausbildung mit Schwerpunkt Saddlefitting haben mir das
+              handwerkliche Rüstzeug sowie das notwendige breite Wissen um die
+              Sattelpassform ermöglicht.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- projects counter section-->
+    <section class="project-counter">
+      <img src="/src/assets/images/dietmar-top-left-radius-element.svg" aria-hidden="true"
+        class="dietmar-top-left-element" />
+      <img src="/src/assets/images/top-left-mobile.svg" aria-hidden="true" class="dietmar-top-left-element--mobile" />
+      <div class="container">
+        <h2 class="h2-heading section-h2-heading project-counter-h2-heading">
+          Aus Liebe zum Pferd
+        </h2>
+        <div class="project-counter__inner-wrapper">
+          <div class="counter-box">
+            <span class="count" data-num="456">0</span>
+            <span class="count__caption">Seit</span>
+            <img src="/src/assets/icons/knight-project-icon.svg" aria-hidden="true" class="project-icon" />
+          </div>
+          <img src="/src/assets/images/project-counter-separator.png" alt="project counter separator"
+            class="project-counter-separator" />
+          <div class="counter-box">
+            <span class="count" data-num="2">0</span>
+            <span class="count__caption">Bundesländer</span>
+            <img src="/src/assets/icons/location-project-icon.svg" aria-hidden="true" class="project-icon" />
+          </div>
+          <img src="/src/assets/images/project-counter-separator.png" alt="project counter separator"
+            class="project-counter-separator" />
+          <div class="counter-box">
+            <span class="count" data-num="538">0</span>
+            <span class="count__caption">Kunden</span>
+            <img src="/src/assets/icons/person-project-icon.svg" aria-hidden="true" class="project-icon" />
+          </div>
+          <img src="/src/assets/images/project-counter-separator.png" alt="project counter separator"
+            class="project-counter-separator" />
+          <div class="counter-box">
+            <span class="count" data-num="1">0</span>
+            <span class="count__caption">eigene Pferde</span>
+            <img src="/src/assets/icons/heart-project-icon.svg" aria-hidden="true" class="project-icon" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- offer section -->
+    <section class="offer">
+      <div class="container">
+        <h2 class="h2-heading section-h2-heading offer-h2-heading">
+          Konzept Konig Pferd garantiert
+        </h2>
+        <p class="offer-subheadline">
+          Sattelanpassung | Sattelverkauf | Sattel Passform Beurteilung und
+          Druckmessung (fast aller Sattelmarken)
+        </p>
+        <div class="offer__wrapper">
+          <figure class="offer-card">
+            <img src="/src/assets/icons/best-price-icon.svg" class="icon offer-card__icon" />
+            <div class="offer-card__text">
+              <h3 class="offer-card__heading">
+                Bestes Preis-Leistungsverhältnis
+              </h3>
+              <p class="offer-card__paragraph">
+                Lorem ipsum dolor sit amet consectetur. Arcu magna risus
+                platea nunc ridiculus. Parturient euismod elit placerat sed
+                non.
+              </p>
+            </div>
+          </figure>
+          <figure class="offer-card">
+            <img src="/src/assets/icons/subscription-price-icon.svg" class="icon offer-card__icon" />
+            <div class="offer-card__text">
+              <h3 class="offer-card__heading">Faire Preis-Leistung</h3>
+              <p class="offer-card__paragraph">
+                Meine Leistungen stehen in einem fairen
+                Preis-Leistungsverhältnis. Ich besuche und berate Dich gerne
+                vor Ort und nehme mir dafür genügend Zeit.
+              </p>
+            </div>
+          </figure>
+          <figure class="offer-card">
+            <img src="/src/assets/icons/garantien-icon.svg" class="icon offer-card__icon" />
+            <div class="offer-card__text">
+              <h3 class="offer-card__heading">Passform Garantie</h3>
+              <p class="offer-card__paragraph">
+                Mein Angebot ist markenübergreifend. Der Sattel wird nach
+                sorgfältiger Auswahl persönlich erstangepasst, die genaue
+                Passform wird garantiert.
+              </p>
+            </div>
+          </figure>
+          <figure class="offer-card">
+            <img src="/src/assets/icons/check-person-icon.svg" class="icon offer-card__icon" />
+            <div class="offer-card__text">
+              <h3 class="offer-card__heading">Absolute Verlässlichkeit</h3>
+              <p class="offer-card__paragraph">
+                König Pferd steht für ein Höchstmaß an Zuverlässigkeit bei
+                zeitgerechter Terminvergabe. Sättel werden ohne Zeit- und
+                Kaufzwang getestet.
+              </p>
+            </div>
+          </figure>
+          <figure class="offer-card">
+            <img src="/src/assets/icons/quality-icon.svg" class="icon offer-card__icon" />
+            <div class="offer-card__text">
+              <h3 class="offer-card__heading">Mega Erfahrung</h3>
+              <p class="offer-card__paragraph">
+                Mit Stolz kann ich auf ein langjähriges Erfahrungswissen
+                zurückgreifen. Ich vertreibe nur Produkte, die ich persönlich
+                getestet habe.
+              </p>
+            </div>
+          </figure>
+          <figure class="offer-card">
+            <img src="/src/assets/icons/bulb-icon.svg" class="icon offer-card__icon" />
+            <div class="offer-card__text">
+              <h3 class="offer-card__heading">
+                Wissen am neuesten Stand der Technik
+              </h3>
+              <p class="offer-card__paragraph">
+                Lorem ipsum dolor sit amet consectetur. Arcu magna risus
+                platea nunc ridiculus. Parturient euismod elit placerat sed
+                non.
+              </p>
+            </div>
+          </figure>
+          <figure class="offer-card">
+            <img src="/src/assets/icons/serious-person-icon.svg" class="icon offer-card__icon" />
+            <div class="offer-card__text">
+              <h3 class="offer-card__heading">Seriosität</h3>
+              <p class="offer-card__paragraph">
+                Lorem ipsum dolor sit amet consectetur. Arcu magna risus
+                platea nunc ridiculus. Parturient euismod elit placerat sed
+                non.
+              </p>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- testimonials section -->
+    <section class="testimonials">
+      <img src="/src/assets/images/triangle.png" aria-hidden="true" class="testiominals-triangle" />
+      <div class="container">
+        <h3 class="h3-heading testimonial-heading">Kundenmeinung</h3>
+        <div class="testimonials__wrapper testimonial-swiper">
+          <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+              <p class="testimonial-paragraph">
+                Für uns der Beste! Preis/Leistung stimmt zu 100%. Man wird
+                sehr gut beraten und es wird auf die Bedürfnisse vom Reiter
+                und vom Pferd eingegangen. Das Pferd wird genau vermessen und
+                anschließend wird beim vorreiten geschaut ob wirklich alles
+                paßt. Würden nie wo anders einen Sattel kaufen.
+              </p>
+              <span class="testimonial-name">Natalie U. (Google rezension)</span>
+            </article>
+            <article class="testimonial swiper-slide">
+              <p class="testimonial-paragraph">
+                Für uns der Beste! Preis/Leistung stimmt zu 100%. Man wird
+                sehr gut beraten und es wird auf die Bedürfnisse vom Reiter
+                und vom Pferd eingegangen. Das Pferd wird genau vermessen und
+                anschließend wird beim vorreiten geschaut ob wirklich alles
+                paßt. Würden nie wo anders einen Sattel kaufen.
+              </p>
+              <span class="testimonial-name">Natalie U. (Google rezension)</span>
+            </article>
+            <article class="testimonial swiper-slide">
+              <p class="testimonial-paragraph">
+                Für uns der Beste! Preis/Leistung stimmt zu 100%. Man wird
+                sehr gut beraten und es wird auf die Bedürfnisse vom Reiter
+                und vom Pferd eingegangen. Das Pferd wird genau vermessen und
+                anschließend wird beim vorreiten geschaut ob wirklich alles
+                paßt. Würden nie wo anders einen Sattel kaufen.
+              </p>
+              <span class="testimonial-name">Natalie U. (Google rezension)</span>
+            </article>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- feature section -->
+    <section class="feature">
+      <img src="/src/assets/images/feature-top-left-radius.svg" aria-hidden="true" class="feature-top-left-radius" />
+      <img src="/src/assets/images/feature-top-right-radius.svg" aria-hidden="true" class="feature-top-right-radius" />
+      <div class="container">
+        <div class="feature__wrapper">
+          <h2 class="h2-heading section-h2-heading">Der perfekte Sattel</h2>
+          <p class="feature-subheadline">
+            Liegt auf dem Pferderücken an der richtigen Stelle, gewährt durch
+            seine Lage dem Pferd immer optimale Bewegungsfreiheit und passt
+            auch dem Reiter.
+          </p>
+          <div class="feature__inner-wrapper">
+            <div class="feature__side-row">
+              <article class="feature-card">
+                <img src="/src/assets/icons/first-icon.svg" alt="feature icon" />
+                <div class="feature__text-row">
+                  <h3 class="feature-h3-heading">Sattelmodell</h3>
+                  <p class="feature__paragraph">
+                    Sattelänge, Kissenkanal und Braumbreite ist korrekt.
+                  </p>
+                </div>
+              </article>
+              <article class="feature-card">
+                <img src="/src/assets/icons/second-icon.svg" alt="feature icon" />
+                <div class="feature__text-row">
+                  <h3 class="feature-h3-heading">Reiter:in</h3>
+                  <p class="feature__paragraph">
+                    Sattelmodell und Sitzgröße ist auf den/die Reiter:in
+                    abgestimmt.
+                  </p>
+                </div>
+              </article>
+              <article class="feature-card">
+                <img src="/src/assets/icons/third-icon.svg" alt="feature icon" />
+                <div class="feature__text-row">
+                  <h3 class="feature-h3-heading">Flexiblität</h3>
+                  <p class="feature__paragraph">
+                    Lässt sich mit der ändernden Anatomie des Pferdes
+                    anpassen.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <img src="/src/assets/images/seddle-img.png" alt="seddle konig pferd" />
+            <div class="feature__side-row">
+              <article class="feature-card">
+                <img src="/src/assets/icons/fourth-icon.svg" alt="feature icon" />
+                <div class="feature__text-row">
+                  <h3 class="feature-h3-heading">Widerristfreiheit</h3>
+                  <p class="feature__paragraph">
+                    Sattelänge, Kissenkanal und Braumbreite ist korrekt.
+                  </p>
+                </div>
+              </article>
+              <article class="feature-card">
+                <img src="/src/assets/icons/fifth-icon.svg" alt="feature icon" />
+                <div class="feature__text-row">
+                  <h3 class="feature-h3-heading">Schwerpunkt</h3>
+                  <p class="feature__paragraph">
+                    Liegt in der Mitte, Schulter und Lende tragen kein
+                    Gewicht.
+                  </p>
+                </div>
+              </article>
+              <article class="feature-card">
+                <img src="/src/assets/icons/sixth-icon.svg" alt="feature icon" />
+                <div class="feature__text-row">
+                  <h3 class="feature-h3-heading">Bewegungsfreiheit</h3>
+                  <p class="feature__paragraph">
+                    Ein korrekt angepasster Sattel bietet enorme
+                    Bewerungsfreiheit.
+                  </p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </body>
+      </div>
+    </section>
+    <!-- saddles section-->
+    <section class="saddles">
+      <img src="/src/assets/images/saddles-bottom-left-radius.svg" class="saddles-bottom-left-radius"
+        aria-hidden="true" />
+      <img src="/src/assets/images/saddles-bottom-right-radius.svg" class="saddles-bottom-right-radius"
+        aria-hidden="true" />
+      <div class="container">
+        <div class="saddles__wrapper">
+          <h2 class="h2-heading section-h2-heading">Sattelverkauf</h2>
+          <p class="saddles-paragraph">
+            Der Sattelkauf ist für den Kunden ohne Risiko, da der Sattel nach
+            sorgfältiger Auswahl erstangepasst wird, die genaue Passform wird
+            hierbei garantiert. Ein Ausschnitt der angebotenen Hersteller und
+            Marken:
+          </p>
+        </div>
+      </div>
+      <div class="saddles__tab-navigation">
+        <button class="saddles-tab-btn" data-active="true">mix</button>
+        <button class="saddles-tab-btn">albion</button>
+        <button class="saddles-tab-btn">frank baines</button>
+        <button class="saddles-tab-btn">sea bis</button>
+        <button class="saddles-tab-btn">bates</button>
+      </div>
+      <div class="container">
+        <div class="saddles__tab-content-wrapper">
+          <div class="tab-content" data-id="mix" data-active="true">
+            <img src="/src/assets/images/saddles/saddle (1).png" alt="saddle" />
+            <img src="/src/assets/images/saddles/saddle (2).png" alt="saddle" />
+            <img src="/src/assets/images/saddles/saddle (3).png" alt="saddle" />
+            <img src="/src/assets/images/saddles/saddle (4).png" alt="saddle" />
+            <img src="/src/assets/images/saddles/saddle (5).png" alt="saddle" />
+            <img src="/src/assets/images/saddles/saddle (6).png" alt="saddle" />
+          </div>
+          <div class="tab-content" data-id="albion" data-active="false">
+            <p class="tab-paragraph">
+              Ist ein Hersteller aus England, der fast keine Komponenten
+              zukauft. Der Sattelbaum wird in firmeneigener Produktion
+              hergestellt. Von Sätteln für sehr kurze Pferde, über Sättel
+              für Pferde mit hohem Widerrist, für Senkrücken oder geraden
+              Rücken, für Tiefsitz, Flachsitz, schmale Taille, breiter
+              Sitz oder schmaler Sitz, besonders weiche Sitzfläche,
+              Kniepauschen flach oder kräftig, egal was benötigt wird, es
+              ist bei Albion erhältlich.
+            </p>
+            <img src="/src/assets/images/saddles/saddle (2).png" alt="saddle" />
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- partnership section-->
+    <section class="partnership">
+      <h2 class="h2-heading">
+        Sattelmarken
+      </h2>
+      <div class="partnership__wrapper" id="marquee">
+        <img src="/src/assets/images/partner (1).png" alt="partner">
+        <img src="/src/assets/images/partner (2).png" alt="partner">
+        <img src="/src/assets/images/partner (3).png" alt="partner">
+        <img src="/src/assets/images/partner (4).png" alt="partner">
+        <img src="/src/assets/images/partner (1).png" alt="partner">
+        <img src="/src/assets/images/partner (2).png" alt="partner">
+        <img src="/src/assets/images/partner (3).png" alt="partner">
+        <img src="/src/assets/images/partner (4).png" alt="partner">
+        <img src="/src/assets/images/partner (1).png" alt="partner">
+        <img src="/src/assets/images/partner (2).png" alt="partner">
+        <img src="/src/assets/images/partner (3).png" alt="partner">
+        <img src="/src/assets/images/partner (4).png" alt="partner">
+        <img src="/src/assets/images/partner (1).png" alt="partner">
+        <img src="/src/assets/images/partner (2).png" alt="partner">
+        <img src="/src/assets/images/partner (3).png" alt="partner">
+        <img src="/src/assets/images/partner (4).png" alt="partner">
+        <img src="/src/assets/images/partner (1).png" alt="partner">
+        <img src="/src/assets/images/partner (2).png" alt="partner">
+        <img src="/src/assets/images/partner (3).png" alt="partner">
+        <img src="/src/assets/images/partner (4).png" alt="partner">
+        <img src="/src/assets/images/partner (1).png" alt="partner">
+        <img src="/src/assets/images/partner (2).png" alt="partner">
+        <img src="/src/assets/images/partner (3).png" alt="partner">
+        <img src="/src/assets/images/partner (4).png" alt="partner">
+        <img src="/src/assets/images/partner (1).png" alt="partner">
+        <img src="/src/assets/images/partner (2).png" alt="partner">
+        <img src="/src/assets/images/partner (3).png" alt="partner">
+        <img src="/src/assets/images/partner (4).png" alt="partner">
+        <img src="/src/assets/images/partner (1).png" alt="partner">
+        <img src="/src/assets/images/partner (2).png" alt="partner">
+        <img src="/src/assets/images/partner (3).png" alt="partner">
+        <img src="/src/assets/images/partner (4).png" alt="partner">
+        <img src="/src/assets/images/partner (1).png" alt="partner">
+        <img src="/src/assets/images/partner (2).png" alt="partner">
+        <img src="/src/assets/images/partner (3).png" alt="partner">
+        <img src="/src/assets/images/partner (4).png" alt="partner">
+        <img src="/src/assets/images/partner (1).png" alt="partner">
+        <img src="/src/assets/images/partner (2).png" alt="partner">
+        <img src="/src/assets/images/partner (3).png" alt="partner">
+        <img src="/src/assets/images/partner (4).png" alt="partner">
+
+      </div>
+    </section>
+    <!-- pricelist section -->
+    <section class="pricelist">
+      <div class="container">
+        <h2 class="h2-heading section-h2-heading">Preise</h2>
+        <div class="pricelist__wrapper">
+          <div class="price-card">
+            <span class="price-card__upperheadline">Saddlechecking</span>
+            <div class="price-card__price-wrapper">
+              <div class="price-card__price">
+                <img class="icon" src="/src/assets/icons/euro.svg" alt="euro currency">
+                <span class="price">140</span>
+              </div>
+              <p>inkl. Ust</p>
+            </div>
+            <ul class="price-card__footer">
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Anfahrt</li>
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Überprüfung des alten
+                Sattels</li>
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Ohne Anpassung</li>
+            </ul>
+          </div>
+          <div class="price-card">
+            <span class="price-card__upperheadline">Saddlefitting</span>
+            <div class="price-card__price-wrapper">
+              <div class="price-card__price">
+                <img class="icon" src="/src/assets/icons/euro.svg" alt="euro currency">
+                <span class="price">280</span>
+              </div>
+              <p class="price-card--inkl-p">inkl. Ust</p>
+            </div>
+            <ul class="price-card__footer">
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Anfahrt</li>
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Vermessung</li>
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Anpassung</li>
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Kammerweite einstellen
+                (kalt)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- yt video -->
+    <section class="yt">
+      <iframe src="https://www.youtube.com/embed/lc7nIO1WrYE" title="ZOSAK &amp; KULCZYCKI" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <!-- contact section -->
+    <section class="contact">
+      <div class="container">
+        <h2 class="h2-heading section-h2-heading">Kontaktiere uns</h2>
+        <div class="contact__wrapper">
+          <form class="contact-form">
+            <div class="contact__form-input">
+              <span><img src="/src/assets/icons/contact-person-icon.svg" class="icon" alt="icon"></span>
+              <input type="text" name="name" id="name">
+              <label class="contact-label" for="name">Name und Nachname</label>
+            </div>
+            <div class="contact__form-input">
+              <span><img src="/src/assets/icons/contact-mail-icon.svg" class="icon" alt="icon"></span>
+              <input type="email" name="email" id="email">
+              <label class="contact-label" for="name">Ihre E-Mail-Adresse</label>
+            </div>
+            <div class="contact__form-input">
+              <span class="textarea-label"><img src="/src/assets/icons/contact-msg-icon.svg" class="icon"
+                  alt="icon"></span>
+              <textarea name="textarea" id="textarea"></textarea>
+              <label class="contact-label" for="textarea">eine Nachricht hinterlassen</label>
+            </div>
+            <button class="submit-btn" type="submit">Anfrage senden <img src="/src/assets/icons/submit-icon.svg"
+                aria-hidden="true"></button>
+          </form>
+          <div class="socials__wrapper">
+            <p class="socials-paragraph">Wir sehen uns in den sozialen Netzwerken</p>
+            <div class="contact-socials">
+              <a href="#"><img src="/src/assets/icons/contact-tik-tok-icon.svg"></a>
+              <a href="#"><img src="/src/assets/icons/contact-fb-icon.svg"></a>
+              <a href="#"><img src="/src/assets/icons/contact-instagram-icon.svg"></a>
+            </div>
+            <a class="contact__phone-call" href="#"><img src="/src/assets/icons/contact-phone-icon.svg"
+                alt="phone call icon">+43 (0) 660 349 19 88</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <a href="index.html" class="footer__logo"><img src="/src/assets/icons/footer-logo-img.png"
+            alt="logo konig pferd"></a>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">DIETMAR KULCZYCKI</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">KONZEPT</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">PERFEKTER SATTEL</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">SATTEL VERKAUF</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">PREISE</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">KONTAKT</a>
+          </li>
+        </ul>
+        <div class="footer__contact">
+          <a href="#" class="footer__phone-call"><img class="icon" src="/src/assets/icons/footer-phone-icon.svg"
+              alt="phone call icon">+43 (0) 660 349 19 88</a>
+          <div class="footer__socials">
+            <a href="#" target="_blank"><img class="icon" src="/src/assets/icons/footer-tik-tok-icon.svg"
+                aria-hidden="true"></a>
+            <a href="#" target="_blank"><img class="icon" src="/src/assets/icons/footer-facebook-icon.svg"
+                aria-hidden="true"></a>
+            <a href="#" target="_blank"><img class="icon" src="/src/assets/icons/footer-instagram-icon.svg"
+                aria-hidden="true"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="copyright__wrapper">
+        <a href="index.html">©️ KÖNIG PFERD</a>|<a href="#">Impressum</a>|<a href="#">Datenschultz</a>| <p>All Right
+          Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/dynamic-marquee@2"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,15 @@
+.partnership {
+}
+.partnership__wrapper {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 10rem;
+  white-space: nowrap;
+  animation: partners 60s infinite linear;
+}
+@keyframes partners {
+  to {
+    transform: translateX(calc(-90% - 5rem));
+  }
+}

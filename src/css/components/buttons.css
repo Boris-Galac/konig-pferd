@@ -45,3 +45,19 @@ button {
   opacity: 1;
   pointer-events: visible;
 }
+.submit-btn {
+  background-color: var(--black);
+  color: var(--white);
+  width: 100%;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.3s;
+}
+.submit-btn:hover {
+  background-color: var(--dark-font);
+}

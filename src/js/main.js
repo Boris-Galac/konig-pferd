@@ -52,3 +52,18 @@ var swiper = new Swiper(".testimonial-swiper", {
     clickable: true,
   },
 });
+
+const contactInputAll = document.querySelectorAll(".contact__form-input input");
+const contactLabelAll = document.querySelectorAll(".contact-label");
+
+contactInputAll.forEach((contactInput) => {
+  contactInput.addEventListener("input", (e) => {
+    const inputValue = e.target.value;
+    const label = e.target.nextElementSibling;
+    if (inputValue.trim() === "") {
+      label.classList.remove("contact-focus-js");
+    } else {
+      label.classList.add("contact-focus-js");
+    }
+  });
+});

@@ -7,6 +7,7 @@
 @import "components/header.css";
 @import "components/buttons.css";
 @import "components/offer-card.css";
+@import "components/price-card.css";
 @import "components/footer.css";
 /* pages */
 /* sections */
@@ -16,5 +17,10 @@
 @import "sections/offer.css";
 @import "sections/testimonials.css";
 @import "sections/feature.css";
+@import "sections/saddles.css";
+@import "sections/partnerhip.css";
+@import "sections/preise.css";
+@import "sections/yt.css";
+@import "sections/contact.css";
 /* utilities */
 @import "utilities/globals.css";

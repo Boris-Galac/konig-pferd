@@ -54,3 +54,31 @@ a {
   text-align: center;
   margin-bottom: 3rem;
 }
+.saddles .section-h2-heading {
+  color: var(--dark-font);
+  text-align: center;
+}
+.saddles .section-h2-heading::after {
+  content: "";
+  transform: translateX(-50%);
+  left: 50%;
+}
+.feature .section-h2-heading {
+  font-family: "Times New Roman", Times, serif;
+}
+.feature .section-h2-heading::after {
+  background-color: var(--white);
+  transform: translateX(-50%);
+  left: 50%;
+}
+.pricelist .section-h2-heading {
+  text-align: center;
+}
+.pricelist .section-h2-heading::after {
+  background-color: var(--white);
+  transform: translateX(-50%);
+  left: 50%;
+}
+.contact .section-h2-heading::after {
+  background-color: var(--white);
+}

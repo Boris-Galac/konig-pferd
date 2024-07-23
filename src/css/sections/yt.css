@@ -1,0 +1,8 @@
+.yt {
+  height: 60vh;
+  padding-block: unset;
+}
+.yt iframe {
+  height: 100%;
+  width: 100%;
+}

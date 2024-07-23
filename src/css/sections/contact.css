@@ -1,0 +1,115 @@
+.contact {
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/src/assets/images/contact-overlay.jpg") no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contact-form {
+  display: grid;
+  gap: 2rem;
+}
+.contact__form-input {
+  position: relative;
+}
+.contact__form-input input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid var(--white);
+  width: 100%;
+  padding: 0.7rem;
+  background-color: transparent;
+  transition: 0.5s;
+  text-indent: 2.5rem;
+  color: var(--white);
+  font-size: 18px;
+}
+.contact__form-input input:focus {
+  color: var(--white);
+}
+.contact__form-input span {
+  position: absolute;
+  left: 1rem;
+  bottom: 0.5rem;
+  width: 48px;
+}
+.contact__form-input input:focus + .contact-label {
+  bottom: 2.5rem;
+}
+.contact-label {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 3rem;
+  font-size: 1.2rem;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.contact-focus-js {
+  bottom: 2.5rem;
+  color: #84ffff;
+}
+.contact__form-input textarea {
+  width: 100%;
+  border: 2px solid var(--white);
+  background-color: transparent;
+  height: 15rem;
+}
+.contact__form-input textarea {
+  width: 100%;
+  border: 2px solid var(--white);
+  background-color: transparent;
+  height: 15rem;
+  color: var(--white);
+  padding-top: 3rem;
+  padding-left: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+}
+.contact__form-input textarea + .contact-label {
+  bottom: unset;
+  top: 12px;
+}
+.contact__form-input textarea:focus {
+  outline: 0;
+  border: 2px solid #84ffff;
+}
+.textarea-label {
+  position: absolute;
+  left: 1rem;
+  bottom: unset;
+  width: 48px;
+  top: 14px;
+}
+.socials__wrapper {
+  display: grid;
+  place-items: center;
+  gap: 1.5rem;
+  background-color: #ffffff2b;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+.socials-paragraph {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-socials {
+}
+.contact__phone-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  gap: 0.5rem;
+  letter-spacing: 1px;
+}

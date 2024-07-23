@@ -9,17 +9,8 @@
   transform: translateX(-50%);
   left: 50%;
   width: 100%;
-  /* border-radius: 100vmax; */
   z-index: 20;
 }
-/* .header[data-active="true"] {
-  width: 90%;
-  top: 1rem;
-}
-.header[data-active="false"] {
-  width: 100%;
-  top: 0;
-} */
 .header__logo {
   color: var(--white);
   width: 48px;
@@ -128,7 +119,7 @@
   transform: rotate(-45deg);
   left: 3px;
 }
-@media (min-width: 1152px) {
+/* @media (min-width: 1152px) {
   .nav {
     position: static;
     inset: unset;
@@ -152,4 +143,4 @@
   .ham-btn {
     display: none;
   }
-}
+} */
