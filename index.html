@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Website</title>
+  <title>Konig Pferd</title>
   <meta name="description" content="Lorem ipsum dolor sit amet." />
   <meta name="robots" content="index, follow" />
   <meta name="keywords" content="lorem, ipsum, dolor, sit, amet" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/src/css/style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css"
+/>
+  <!-- <link rel="stylesheet" href="/src/css/style.css" /> -->
+  <link rel="stylesheet" href="/dist/style.css" />
   <script defer src="/src/js/main.js"></script>
 </head>
 
@@ -17,11 +22,12 @@
   <header class="header" data-active="true">
     <a href="index.html" class="header__logo"><img src="/src/assets/icons/logo.svg" alt="logo" /></a>
     <nav class="nav" id="nav" aria-expanded="false">
+      <a class="nav__logo" href="index.html"><img src="/src/assets/icons/nav-logo.png" aria-hidden="true"></a>
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        <li class="nav__item"><a href="#offer" class="nav__link nav-link-1">Angebot</a></li>
+        <li class="nav__item"><a href="#feature" class="nav__link nav-link-2">Merkmale</a></li>
+        <li class="nav__item"><a href="#saddles" class="nav__link nav-link-3">Sättel</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link nav-link-4">Kontakt</a></li>
       </ul>
       <div class="footer__contact">
         <a href="#" class="footer__phone-call"><img class="icon" src="/src/assets/icons/footer-phone-icon.svg"
@@ -54,11 +60,11 @@
     </video>
     <!-- hero section -->
     <section class="hero">
-      <div class="hero__language-dropdown">
-        <label class="hero__language-dropdown-label">select language</label>
-        <button>
-          <img src="/src/assets/icons/german-flag-icon.svg" alt="" />
-        </button>
+      <div class="language-form">
+        <div class="language-form__select">
+          <div class="language-form__option" aria-label="croatian language" data-active="false"><div id="hr-lang" data-value="de"><img src="src/assets/icons/de-flag.svg" aria-hidden="true">Deutch</div></div>
+          <div class="language-form__option" aria-label="english language" data-active="false"><div id="eng-lang" data-value="en"><img src="src/assets/icons/uk-flag.svg" aria-hidden="true">English</div></div>
+        </div>
       </div>
       <div class="container">
         <div class="hero__wrapper">
@@ -76,7 +82,7 @@
             <h2 class="hero__footer-subheadline">
               SPEZIALISIERTE SÄTTEL FÜR IHR PFERD
             </h2>
-            <a href="#offer" class="hero__cta" role="button">Entdecken Sie Ihren Sattel
+            <a href="#offer" class="hero__cta hero--cta" role="button">Entdecken Sie Ihren Sattel
               <img src="/src/assets/icons/cta-arrow-icon.svg" alt="right arrow" /></a>
           </div>
           <button class="thumbnail-interview-btn thumbnail-interview-btn--desktop">
@@ -94,19 +100,19 @@
         class="dietmar-bottom-right-element" />
       <div class="container">
         <div class="dietmar__wrapper">
-          <img src="/src/assets/images/dietmar-img.png" alt="dietmar and horse" class="dietmar__img-desktop" />
+          <img src="/src/assets/images/dietmar-img.png" alt="dietmar and horse" class="dietmar__img-desktop hidden-fade" />
           <article class="dietmar__article">
             <h2 class="h2-heading dietmar-h2-heading">
               <span class="dietmar--first-span">Dietmar</span>
               <span class="dietmar--second-span">Kulczycki</span>
             </h2>
             <img src="/src/assets/images/dietmar-img.png" alt="dietmar and horse" class="dietmar__img-mobile" />
-            <p class="dietmar-subheadline">
+            <p class="dietmar-subheadline hidden-right dietmar--subheadline" style="animation-delay: .2s;">
               Experte für Sattelverkauf und Sattelanpassung in Österreich (ausg.
               Vorarlberg & Tirol)
             </p>
             <div class="dietmar__paragraph-wrapper">
-              <p class="paragraph">
+              <p class="paragraph hidden-right dietmar--paragraph-one" style="animation-delay: .4s;">
                 Ich treffe persönlich eine Vorselektion und bringe den richtigen
                 Sattel zum Pferd/Reiter:in-Paar und nicht umgekehrt. Da ich
                 selbst aktiv Dressur bis zur schweren Klasse reite, selbst
@@ -114,7 +120,7 @@
                 sehr am Herzen liegt, verwende ich nur Produkte von Herstellern,
                 die sich bei meiner persönlichen Testung bewährt haben.
               </p>
-              <p class="paragraph">
+              <p class="paragraph hidden-right dietmar--paragraph-two" style="animation-delay: .6s;">
                 Langes Studium der Anatomie und Bewegungsphysiologie an der Vet.
                 Med. Universität in Wien und eine internationale
                 Sattlerausbildung mit Schwerpunkt Saddlefitting haben mir das
@@ -132,34 +138,34 @@
         class="dietmar-top-left-element" />
       <img src="/src/assets/images/top-left-mobile.svg" aria-hidden="true" class="dietmar-top-left-element--mobile" />
       <div class="container">
-        <h2 class="h2-heading section-h2-heading project-counter-h2-heading">
+        <h2 class="h2-heading section-h2-heading project-counter-h2-heading project-counter--heading">
           Aus Liebe zum Pferd
         </h2>
         <div class="project-counter__inner-wrapper">
           <div class="counter-box">
             <span class="count" data-num="456">0</span>
-            <span class="count__caption">Seit</span>
+            <span class="count__caption count__caption--seit">Seit</span>
             <img src="/src/assets/icons/knight-project-icon.svg" aria-hidden="true" class="project-icon" />
           </div>
           <img src="/src/assets/images/project-counter-separator.png" alt="project counter separator"
             class="project-counter-separator" />
           <div class="counter-box">
             <span class="count" data-num="2">0</span>
-            <span class="count__caption">Bundesländer</span>
+            <span class="count__caption count__caption--bundeslander">Bundesländer</span>
             <img src="/src/assets/icons/location-project-icon.svg" aria-hidden="true" class="project-icon" />
           </div>
           <img src="/src/assets/images/project-counter-separator.png" alt="project counter separator"
             class="project-counter-separator" />
           <div class="counter-box">
             <span class="count" data-num="538">0</span>
-            <span class="count__caption">Kunden</span>
+            <span class="count__caption count__caption--kunden">Kunden</span>
             <img src="/src/assets/icons/person-project-icon.svg" aria-hidden="true" class="project-icon" />
           </div>
           <img src="/src/assets/images/project-counter-separator.png" alt="project counter separator"
             class="project-counter-separator" />
           <div class="counter-box">
             <span class="count" data-num="1">0</span>
-            <span class="count__caption">eigene Pferde</span>
+            <span class="count__caption count__caption--pferde">eigene Pferde</span>
             <img src="/src/assets/icons/heart-project-icon.svg" aria-hidden="true" class="project-icon" />
           </div>
         </div>
@@ -168,89 +174,89 @@
     <!-- offer section -->
     <section class="offer" id="offer">
       <div class="container">
-        <h2 class="h2-heading section-h2-heading offer-h2-heading">
+        <h2 class="h2-heading section-h2-heading offer-h2-heading hidden-right offer--heading" style="animation-delay: .2s;">
           Konzept Konig Pferd garantiert
         </h2>
-        <p class="offer-subheadline">
+        <p class="offer-subheadline hidden-right offer--subheadline" style="animation-delay: .6s;">
           Sattelanpassung | Sattelverkauf | Sattel Passform Beurteilung und
           Druckmessung (fast aller Sattelmarken)
         </p>
         <div class="offer__wrapper">
-          <figure class="offer-card">
+          <figure class="offer-card hidden-left" style="animation-delay: .1s;">
             <img src="/src/assets/icons/best-price-icon.svg" class="icon offer-card__icon" />
             <div class="offer-card__text">
-              <h3 class="offer-card__heading">
+              <h3 class="offer-card__heading offer-1-heading">
                 Bestes Preis-Leistungsverhältnis
               </h3>
-              <p class="offer-card__paragraph">
+              <p class="offer-card__paragraph offer-1-subheading">
                 Lorem ipsum dolor sit amet consectetur. Arcu magna risus
                 platea nunc ridiculus. Parturient euismod elit placerat sed
                 non.
               </p>
             </div>
           </figure>
-          <figure class="offer-card">
+          <figure class="offer-card hidden-left" style="animation-delay: .2s;">
             <img src="/src/assets/icons/subscription-price-icon.svg" class="icon offer-card__icon" />
             <div class="offer-card__text">
-              <h3 class="offer-card__heading">Faire Preis-Leistung</h3>
-              <p class="offer-card__paragraph">
+              <h3 class="offer-card__heading offer-2-heading">Faire Preis-Leistung</h3>
+              <p class="offer-card__paragraph offer-2-subheading">
                 Meine Leistungen stehen in einem fairen
                 Preis-Leistungsverhältnis. Ich besuche und berate Dich gerne
                 vor Ort und nehme mir dafür genügend Zeit.
               </p>
             </div>
           </figure>
-          <figure class="offer-card">
+          <figure class="offer-card hidden-left" style="animation-delay: .3s;">
             <img src="/src/assets/icons/garantien-icon.svg" class="icon offer-card__icon" />
             <div class="offer-card__text">
-              <h3 class="offer-card__heading">Passform Garantie</h3>
-              <p class="offer-card__paragraph">
+              <h3 class="offer-card__heading offer-3-heading">Passform Garantie</h3>
+              <p class="offer-card__paragraph offer-3-subheading">
                 Mein Angebot ist markenübergreifend. Der Sattel wird nach
                 sorgfältiger Auswahl persönlich erstangepasst, die genaue
                 Passform wird garantiert.
               </p>
             </div>
           </figure>
-          <figure class="offer-card">
+          <figure class="offer-card hidden-left" style="animation-delay: .4s;">
             <img src="/src/assets/icons/check-person-icon.svg" class="icon offer-card__icon" />
             <div class="offer-card__text">
-              <h3 class="offer-card__heading">Absolute Verlässlichkeit</h3>
-              <p class="offer-card__paragraph">
+              <h3 class="offer-card__heading offer-4-heading">Absolute Verlässlichkeit</h3>
+              <p class="offer-card__paragraph offer-4-subheading">
                 König Pferd steht für ein Höchstmaß an Zuverlässigkeit bei
                 zeitgerechter Terminvergabe. Sättel werden ohne Zeit- und
                 Kaufzwang getestet.
               </p>
             </div>
           </figure>
-          <figure class="offer-card">
+          <figure class="offer-card hidden-left" style="animation-delay: .5s;">
             <img src="/src/assets/icons/quality-icon.svg" class="icon offer-card__icon" />
             <div class="offer-card__text">
-              <h3 class="offer-card__heading">Mega Erfahrung</h3>
-              <p class="offer-card__paragraph">
+              <h3 class="offer-card__heading offer-5-heading">Mega Erfahrung</h3>
+              <p class="offer-card__paragraph offer-5-subheading">
                 Mit Stolz kann ich auf ein langjähriges Erfahrungswissen
                 zurückgreifen. Ich vertreibe nur Produkte, die ich persönlich
                 getestet habe.
               </p>
             </div>
           </figure>
-          <figure class="offer-card">
+          <figure class="offer-card hidden-left" style="animation-delay: .6s;">
             <img src="/src/assets/icons/bulb-icon.svg" class="icon offer-card__icon" />
             <div class="offer-card__text">
-              <h3 class="offer-card__heading">
+              <h3 class="offer-card__heading offer-6-heading">
                 Wissen am neuesten Stand der Technik
               </h3>
-              <p class="offer-card__paragraph">
+              <p class="offer-card__paragraph offer-6-subheading">
                 Lorem ipsum dolor sit amet consectetur. Arcu magna risus
                 platea nunc ridiculus. Parturient euismod elit placerat sed
                 non.
               </p>
             </div>
           </figure>
-          <figure class="offer-card">
+          <figure class="offer-card hidden-left" style="animation-delay: .7s;">
             <img src="/src/assets/icons/serious-person-icon.svg" class="icon offer-card__icon" />
             <div class="offer-card__text">
-              <h3 class="offer-card__heading">Seriosität</h3>
-              <p class="offer-card__paragraph">
+              <h3 class="offer-card__heading offer-7-heading">Seriosität</h3>
+              <p class="offer-card__paragraph offer-7-subheading">
                 Lorem ipsum dolor sit amet consectetur. Arcu magna risus
                 platea nunc ridiculus. Parturient euismod elit placerat sed
                 non.
@@ -264,38 +270,38 @@
     <section class="testimonials">
       <img src="/src/assets/images/triangle.png" aria-hidden="true" class="testiominals-triangle" />
       <div class="container">
-        <h3 class="h3-heading testimonial-heading">Kundenmeinung</h3>
+        <h3 class="h3-heading testimonial-heading testimonial--heading">Kundenmeinung</h3>
         <div class="testimonials__wrapper testimonial-swiper">
           <div class="swiper-wrapper">
             <article class="testimonial swiper-slide">
-              <p class="testimonial-paragraph">
+              <p class="testimonial-paragraph testimonial--1-paragraph">
                 Für uns der Beste! Preis/Leistung stimmt zu 100%. Man wird
                 sehr gut beraten und es wird auf die Bedürfnisse vom Reiter
                 und vom Pferd eingegangen. Das Pferd wird genau vermessen und
                 anschließend wird beim vorreiten geschaut ob wirklich alles
                 paßt. Würden nie wo anders einen Sattel kaufen.
               </p>
-              <span class="testimonial-name">Natalie U. (Google rezension)</span>
+              <span class="testimonial-name testimonial--name">Natalie U. (Google rezension)</span>
             </article>
             <article class="testimonial swiper-slide">
-              <p class="testimonial-paragraph">
+              <p class="testimonial-paragraph testimonial--2-paragraph">
                 Für uns der Beste! Preis/Leistung stimmt zu 100%. Man wird
                 sehr gut beraten und es wird auf die Bedürfnisse vom Reiter
                 und vom Pferd eingegangen. Das Pferd wird genau vermessen und
                 anschließend wird beim vorreiten geschaut ob wirklich alles
                 paßt. Würden nie wo anders einen Sattel kaufen.
               </p>
-              <span class="testimonial-name">Natalie U. (Google rezension)</span>
+              <span class="testimonial-name testimonial--2-name">Natalie U. (Google rezension)</span>
             </article>
             <article class="testimonial swiper-slide">
-              <p class="testimonial-paragraph">
+              <p class="testimonial-paragraph testimonial--3-paragraph">
                 Für uns der Beste! Preis/Leistung stimmt zu 100%. Man wird
                 sehr gut beraten und es wird auf die Bedürfnisse vom Reiter
                 und vom Pferd eingegangen. Das Pferd wird genau vermessen und
                 anschließend wird beim vorreiten geschaut ob wirklich alles
                 paßt. Würden nie wo anders einen Sattel kaufen.
               </p>
-              <span class="testimonial-name">Natalie U. (Google rezension)</span>
+              <span class="testimonial-name testimonial--3-name">Natalie U. (Google rezension)</span>
             </article>
           </div>
           <div class="swiper-pagination"></div>
@@ -303,75 +309,75 @@
       </div>
     </section>
     <!-- feature section -->
-    <section class="feature">
+    <section class="feature" id="feature">
       <img src="/src/assets/images/feature-top-left-radius.svg" aria-hidden="true" class="feature-top-left-radius" />
       <img src="/src/assets/images/feature-top-right-radius.svg" aria-hidden="true" class="feature-top-right-radius" />
       <div class="container">
         <div class="feature__wrapper">
-          <h2 class="h2-heading section-h2-heading">Der perfekte Sattel</h2>
-          <p class="feature-subheadline">
+          <h2 class="h2-heading section-h2-heading feature--heading">Der perfekte Sattel</h2>
+          <p class="feature-subheadline feature--subheading">
             Liegt auf dem Pferderücken an der richtigen Stelle, gewährt durch
             seine Lage dem Pferd immer optimale Bewegungsfreiheit und passt
             auch dem Reiter.
           </p>
           <div class="feature__inner-wrapper">
             <div class="feature__side-row">
-              <article class="feature-card">
-                <img src="/src/assets/icons/first-icon.svg" alt="feature icon" />
-                <div class="feature__text-row">
-                  <h3 class="feature-h3-heading">Sattelmodell</h3>
-                  <p class="feature__paragraph">
+              <article class="feature-card hidden-left" style="animation-delay: .1s;">
+                <img src="/src/assets/icons/first-icon.svg" alt="feature icon" class="hidden-left" style="animation-delay: .6s;" />
+                <div class="feature__text-row hidden-left" style="animation-delay: .4s;">
+                  <h3 class="feature-h3-heading feature--2-heading">Sattelmodell</h3>
+                  <p class="feature__paragraph feature--2-subheading">
                     Sattelänge, Kissenkanal und Braumbreite ist korrekt.
                   </p>
                 </div>
               </article>
-              <article class="feature-card">
-                <img src="/src/assets/icons/second-icon.svg" alt="feature icon" />
-                <div class="feature__text-row">
-                  <h3 class="feature-h3-heading">Reiter:in</h3>
-                  <p class="feature__paragraph">
+              <article class="feature-card hidden-left" style="animation-delay: .3s;">
+                <img src="/src/assets/icons/second-icon.svg" class="hidden-left" style="animation-delay: .6s;" alt="feature icon" />
+                <div class="feature__text-row hidden-left" style="animation-delay: .4s;">
+                  <h3 class="feature-h3-heading feature--3-heading">Reiter:in</h3>
+                  <p class="feature__paragraph feature--3-subheading">
                     Sattelmodell und Sitzgröße ist auf den/die Reiter:in
                     abgestimmt.
                   </p>
                 </div>
               </article>
-              <article class="feature-card">
-                <img src="/src/assets/icons/third-icon.svg" alt="feature icon" />
-                <div class="feature__text-row">
-                  <h3 class="feature-h3-heading">Flexiblität</h3>
-                  <p class="feature__paragraph">
+              <article class="feature-card hidden-left" style="animation-delay: .6s;">
+                <img src="/src/assets/icons/third-icon.svg" class="hidden-left" alt="feature icon" style="animation-delay: .6s;" />
+                <div class="feature__text-row hidden-left" style="animation-delay: .4s;">
+                  <h3 class="feature-h3-heading feature--4-heading">Flexiblität</h3>
+                  <p class="feature__paragraph feature--4-subheading">
                     Lässt sich mit der ändernden Anatomie des Pferdes
                     anpassen.
                   </p>
                 </div>
               </article>
             </div>
-            <img src="/src/assets/images/seddle-img.png" alt="seddle konig pferd" />
+            <img src="/src/assets/images/seddle-img.png" alt="seddle konig pferd" class="hidden-fade" style="animation-delay: .6s;" />
             <div class="feature__side-row">
-              <article class="feature-card">
-                <img src="/src/assets/icons/fourth-icon.svg" alt="feature icon" />
-                <div class="feature__text-row">
-                  <h3 class="feature-h3-heading">Widerristfreiheit</h3>
-                  <p class="feature__paragraph">
+              <article class="feature-card hidden-right" style="animation-delay: .1s;">
+                <img src="/src/assets/icons/fourth-icon.svg" alt="feature icon" class="hidden-right" style="animation-delay: .6s;" />
+                <div class="feature__text-row hidden-right" style="animation-delay: .4s;">
+                  <h3 class="feature-h3-heading feature--5-heading">Widerristfreiheit</h3>
+                  <p class="feature__paragraph feature--5-subheading">
                     Sattelänge, Kissenkanal und Braumbreite ist korrekt.
                   </p>
                 </div>
               </article>
-              <article class="feature-card">
-                <img src="/src/assets/icons/fifth-icon.svg" alt="feature icon" />
-                <div class="feature__text-row">
-                  <h3 class="feature-h3-heading">Schwerpunkt</h3>
-                  <p class="feature__paragraph">
+              <article class="feature-card hidden-right" style="animation-delay: .3s;">
+                <img src="/src/assets/icons/fifth-icon.svg" class="hidden-right" style="animation-delay: .6s;" alt="feature icon" />
+                <div class="feature__text-row hidden-right" style="animation-delay: .4s;">
+                  <h3 class="feature-h3-heading feature--6-heading">Schwerpunkt</h3>
+                  <p class="feature__paragraph feature--6-subheading">
                     Liegt in der Mitte, Schulter und Lende tragen kein
                     Gewicht.
                   </p>
                 </div>
               </article>
-              <article class="feature-card">
-                <img src="/src/assets/icons/sixth-icon.svg" alt="feature icon" />
-                <div class="feature__text-row">
-                  <h3 class="feature-h3-heading">Bewegungsfreiheit</h3>
-                  <p class="feature__paragraph">
+              <article class="feature-card hidden-right" style="animation-delay: .6s;">
+                <img src="/src/assets/icons/sixth-icon.svg" class="hidden-right" style="animation-delay: .6s;" alt="feature icon" />
+                <div class="feature__text-row hidden-right" style="animation-delay: .4s;">
+                  <h3 class="feature-h3-heading feature--7-heading">Bewegungsfreiheit</h3>
+                  <p class="feature__paragraph feature--7-subheading">
                     Ein korrekt angepasster Sattel bietet enorme
                     Bewerungsfreiheit.
                   </p>
@@ -383,15 +389,15 @@
       </div>
     </section>
     <!-- saddles section-->
-    <section class="saddles">
+    <section class="saddles" id="saddles">
       <img src="/src/assets/images/saddles-bottom-left-radius.svg" class="saddles-bottom-left-radius"
         aria-hidden="true" />
       <img src="/src/assets/images/saddles-bottom-right-radius.svg" class="saddles-bottom-right-radius"
         aria-hidden="true" />
       <div class="container">
         <div class="saddles__wrapper">
-          <h2 class="h2-heading section-h2-heading">Sattelverkauf</h2>
-          <p class="saddles-paragraph">
+          <h2 class="h2-heading section-h2-heading saddles--heading">Sattelverkauf</h2>
+          <p class="saddles-paragraph saddles--subheading">
             Der Sattelkauf ist für den Kunden ohne Risiko, da der Sattel nach
             sorgfältiger Auswahl erstangepasst wird, die genaue Passform wird
             hierbei garantiert. Ein Ausschnitt der angebotenen Hersteller und
@@ -407,16 +413,28 @@
         <button class="saddles-tab-btn">bates</button>
       </div>
       <div class="container">
-        <div class="saddles__tab-content-wrapper">
+        <div class="saddles__tab-content-wrapper gallery">
           <div class="tab-content" data-id="mix" data-active="true">
-            <img src="/src/assets/images/saddles/saddle (1).png" alt="saddle" />
-            <img src="/src/assets/images/saddles/saddle (2).png" alt="saddle" />
-            <img src="/src/assets/images/saddles/saddle (3).png" alt="saddle" />
-            <img src="/src/assets/images/saddles/saddle (4).png" alt="saddle" />
-            <img src="/src/assets/images/saddles/saddle (5).png" alt="saddle" />
-            <img src="/src/assets/images/saddles/saddle (6).png" alt="saddle" />
+              <a href="/src/assets/images/saddles/saddle (1).png" class="saddle" data-info="Albion Dressursattel SLK Ultima" data-caption="Albion Dressursattel SLK Ultima">
+                <img src="/src/assets/images/saddles/saddle (1).png" alt="saddle"  />
+              </a>
+              <a href="/src/assets/images/saddles/saddle (2).png" class="saddle" data-info="Bates Vielseitigkeitssatte" data-caption="Bates Vielseitigkeitssatte">
+                <img src="/src/assets/images/saddles/saddle (2).png" alt="saddle" />
+              </a>
+              <a href="/src/assets/images/saddles/saddle (3).png" class="saddle" data-info="Bates Dressursattel Artiste" data-caption="Bates Dressursattel Artiste">
+                <img src="/src/assets/images/saddles/saddle (3).png" alt="saddle" />
+              </a>
+              <a href="/src/assets/images/saddles/saddle (4).png" class="saddle" data-info="Frank Baines Ausdauersattel Enduro Endurance" data-caption="Frank Baines Ausdauersattel Enduro Endurance">
+                <img src="/src/assets/images/saddles/saddle (4).png" alt="saddle" />
+              </a>
+              <a href="/src/assets/images/saddles/saddle (6).png" class="saddle" data-info="Frank Baines Dressursattel Operetta schwarz" data-caption="Frank Baines Dressursattel Operetta schwarz">
+                <img src="/src/assets/images/saddles/saddle (6).png" alt="saddle" />
+              </a>
+              <a href="/src/assets/images/saddles/saddle (7).png" class="saddle" data-info="Sea Bis Sprigsattel Utah schwarz" data-caption="Sea Bis Sprigsattel Utah schwarz">
+                <img src="/src/assets/images/saddles/saddle (7).png" alt="saddle" />
+              </a>
           </div>
-          <div class="tab-content" data-id="albion" data-active="false">
+          <div class="tab-content " data-id="albion" data-active="false">
             <p class="tab-paragraph">
               Ist ein Hersteller aus England, der fast keine Komponenten
               zukauft. Der Sattelbaum wird in firmeneigener Produktion
@@ -427,7 +445,54 @@
               Kniepauschen flach oder kräftig, egal was benötigt wird, es
               ist bei Albion erhältlich.
             </p>
-            <img src="/src/assets/images/saddles/saddle (2).png" alt="saddle" />
+            <a href="/src/assets/images/saddles/saddle (2).png" class="saddle" data-info="Albion Dressursattel SLK Ultima" data-caption="Albion Dressursattel SLK Ultima">
+              <img src="/src/assets/images/saddles/saddle (2).png" alt="saddle" />
+            </a>
+          </div>
+          <div class="tab-content" data-id="frank baines" data-active="false">
+            <p class="tab-paragraph">
+              Hersteller aus England, ebenso wie Albion, eine Manufaktur, die sehr individuelle Lösungen anbietet. Auch die Sättel von Frank Baines wachsen passiv mit den Veränderungen des Pferdes mit. Obendrein macht Frank Baines ein sehr schönes Design mit einer großen Auswahl an Farben und Lederarten. So verwenden sie auch Büffelleder, Bisonleder, Style-Leder in Python-, oder Kroko Look, sowie Straußenleder, selbst Rochenleder ist erhältlich. Ich selbst reite meine Pferde sehr gerne mit Produkten von Frank Baines.
+            </p>
+            <a href="/src/assets/images/saddles/saddle (4).png" class="saddle" data-info="Frank Baines Ausdauersattel Enduro Endurance" data-caption="Frank Baines Ausdauersattel Enduro Endurance Brown">
+              <img src="/src/assets/images/saddles/saddle (4).png" alt="saddle" />
+            </a>
+            <a href="/src/assets/images/saddles/saddle (10).png" class="saddle" data-info="Frank Baines Ausdauersattel Enduro Endurance" data-caption="Frank Baines Ausdauersattel Enduro Endurance">
+              <img src="/src/assets/images/saddles/saddle (10).png" alt="saddle" />
+            </a>
+            <a href="/src/assets/images/saddles/saddle (11).png" class="saddle" data-info="Frank Baines Dressursattel Omni Standard" data-caption="Frank Baines Dressursattel Omni Standard">
+              <img src="/src/assets/images/saddles/saddle (11).png" alt="saddle" />
+            </a>
+            <a href="/src/assets/images/saddles/saddle (6).png" class="saddle" data-info="Frank Baines Dressursattel Operetta schwarz" data-caption="Frank Baines Dressursattel Operetta schwarz">
+              <img src="/src/assets/images/saddles/saddle (6).png" alt="saddle" />
+            </a>
+            <a href="/src/assets/images/saddles/saddle (9).png" class="saddle" data-info="Frank Baines Dressursattel Operetta braun" data-caption="Frank Baines Dressursattel Operetta braun">
+              <img src="/src/assets/images/saddles/saddle (9).png" alt="saddle" />
+            </a>
+          </div>
+          <div class="tab-content" data-id="sea bis" data-active="false">
+            <p class="tab-paragraph">
+              Zeichnet sich durch seine Verstellbarkeit und durch seinen Sitzkomfort aus. Ziel ist es auch hier, ein Pferdeleben lang einen mitwachsenden Sattel zu haben.
+            </p>
+            <a href="/src/assets/images/saddles/saddle (5).png" class="saddle" data-info="Sea Bis Dressursattel Vigo" data-caption="Sea Bis Dressursattel Vigo">
+                 <img src="/src/assets/images/saddles/saddle (5).png" alt="saddle" />
+            </a>
+            <a href="/src/assets/images/saddles/saddle (7).png" class="saddle" data-info="Sea Bis Sprigsattel Utah schwarz" data-caption="Sea Bis Sprigsattel Utah schwarz">
+                 <img src="/src/assets/images/saddles/saddle (7).png" alt="saddle" />
+            </a>
+            <a href="/src/assets/images/saddles/saddle (8).png" class="saddle" data-info="Sea Bis Sprigsattel Utah braun" data-caption="Sea Bis Sprigsattel Utah braun">
+                 <img src="/src/assets/images/saddles/saddle (8).png" alt="saddle" />
+            </a>
+          </div>
+          <div class="tab-content" data-id="bates" data-active="false">
+            <p class="tab-paragraph">
+              Hat ein eigenes patentiertes Sattelkissen, das Easy Change Riser System. Das Sattelkissen, sowie der Sattelkopf lassen sich einstellen, der Sattelkopf ist austauschbar. Ein sehr großes Sortiment bietet für sehr viele verschiedene Pferde einen optimalen Sattel.
+            </p>
+            <a href="/src/assets/images/saddles/saddle (2).png" class="saddle" data-info="Bates Vielseitigkeitssattel" data-caption="Bates Vielseitigkeitssattel">
+              <img src="/src/assets/images/saddles/saddle (2).png" alt="saddle" />
+            </a>
+            <a href="/src/assets/images/saddles/saddle (3).png" class="saddle" data-info="Bates Dressursattel Artiste" data-caption="Bates Dressursattel Artiste">
+              <img src="/src/assets/images/saddles/saddle (3).png" alt="saddle" />
+            </a>
           </div>
         </div>
       </div>
@@ -435,7 +500,7 @@
     </section>
     <!-- partnership section-->
     <section class="partnership">
-      <h2 class="h2-heading">
+      <h2 class="h2-heading partnership--heading">
         Sattelmarken
       </h2>
       <div class="partnership__wrapper" id="marquee">
@@ -485,39 +550,38 @@
     <!-- pricelist section -->
     <section class="pricelist">
       <div class="container">
-        <h2 class="h2-heading section-h2-heading">Preise</h2>
+        <h2 class="h2-heading section-h2-heading preise--heading">Preise</h2>
         <div class="pricelist__wrapper">
-          <div class="price-card">
-            <span class="price-card__upperheadline">Saddlechecking</span>
+          <div class="price-card hidden-left">
+            <span class="price-card__upperheadline preise--upperheadline">Saddlechecking</span>
             <div class="price-card__price-wrapper">
               <div class="price-card__price">
                 <img class="icon" src="/src/assets/icons/euro.svg" alt="euro currency">
                 <span class="price">140</span>
               </div>
-              <p>inkl. Ust</p>
+              <p class="inkl--1-ust">inkl. Ust</p>
             </div>
             <ul class="price-card__footer">
-              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Anfahrt</li>
-              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Überprüfung des alten
-                Sattels</li>
-              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Ohne Anpassung</li>
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon"><span class="li--1">Anfahrt</span></li>
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon"><span class="li--2">Überprüfung des alten Sattels</span> </li>
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon"><span class="li--3">Sattelmarken</span></li>
             </ul>
           </div>
-          <div class="price-card">
-            <span class="price-card__upperheadline">Saddlefitting</span>
+          <div class="price-card hidden-right">
+            <span class="price-card__upperheadline preise--2-upperheadline">Saddlefitting</span>
             <div class="price-card__price-wrapper">
               <div class="price-card__price">
                 <img class="icon" src="/src/assets/icons/euro.svg" alt="euro currency">
                 <span class="price">280</span>
               </div>
-              <p class="price-card--inkl-p">inkl. Ust</p>
+              <p class="price-card--inkl-p inkl--2-ust">inkl. Ust</p>
             </div>
             <ul class="price-card__footer">
-              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Anfahrt</li>
-              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Vermessung</li>
-              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Anpassung</li>
-              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon">Kammerweite einstellen
-                (kalt)</li>
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon"><span class="li--4">Anfahrt</span> </li>
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon"><span class="li--5">Vermessung</span> </li>
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon"><span class="li--6">Anpassung</span> </li>
+              <li><img class="icon" src="/src/assets/icons/check-price-icon.svg" alt="check icon"><span class="li--7">Kammerweite einstellen
+                (kalt)</span></li>
             </ul>
           </div>
         </div>
@@ -530,32 +594,32 @@
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section> -->
     <!-- contact section -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
-        <h2 class="h2-heading section-h2-heading">Kontaktiere uns</h2>
+        <h2 class="h2-heading section-h2-heading kontakt--heading">Kontaktiere uns</h2>
         <div class="contact__wrapper">
           <form class="contact-form">
             <div class="contact__form-input">
               <span><img src="/src/assets/icons/contact-person-icon.svg" class="icon" alt="icon"></span>
               <input type="text" name="name" id="name">
-              <label class="contact-label" for="name">Name und Nachname</label>
+              <label class="contact-label kontakt--1-label" for="name">Name und Nachname</label>
             </div>
             <div class="contact__form-input">
               <span><img src="/src/assets/icons/contact-mail-icon.svg" class="icon" alt="icon"></span>
               <input type="email" name="email" id="email">
-              <label class="contact-label" for="name">Ihre E-Mail-Adresse</label>
+              <label class="contact-label kontakt--2-label" for="name">Ihre E-Mail-Adresse</label>
             </div>
             <div class="contact__form-input">
               <span class="textarea-label"><img src="/src/assets/icons/contact-msg-icon.svg" class="icon"
                   alt="icon"></span>
               <textarea name="textarea" id="textarea"></textarea>
-              <label class="contact-label" for="textarea">eine Nachricht hinterlassen</label>
+              <label class="contact-label kontakt--3-label" for="textarea">eine Nachricht hinterlassen</label>
             </div>
-            <button class="submit-btn" type="submit">Anfrage senden <img src="/src/assets/icons/submit-icon.svg"
+            <button class="submit-btn" type="submit"><span class="kontakt--submit">Anfrage senden</span><img src="/src/assets/icons/submit-icon.svg"
                 aria-hidden="true"></button>
           </form>
           <div class="socials__wrapper">
-            <p class="socials-paragraph">Wir sehen uns in den sozialen Netzwerken</p>
+            <p class="socials-paragraph kontakt--socials-heading">Wir sehen uns in den sozialen Netzwerken</p>
             <div class="contact-socials">
               <a href="#"><img src="/src/assets/icons/contact-tik-tok-icon.svg"></a>
               <a href="#"><img src="/src/assets/icons/contact-fb-icon.svg"></a>
@@ -614,9 +678,19 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/dynamic-marquee@2"></script>
+  <div class="lang-question" aria-label="Question for website main language" data-active="false">
+    <div class="lang-question__modal">
+      <button class="lang-question__option-btn" data-value="de"><img src="src/assets/icons/de-flag.svg" alt="croatian flag language"></button>
+      <button class="lang-question__option-btn" data-value="en"><img src="src/assets/icons/uk-flag.svg" alt="croatian flag language"></button>
+    </div>
+  </div>  
+  <!-- <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/dynamic-marquee@2"></script> -->
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
 </body>
 
 </html>

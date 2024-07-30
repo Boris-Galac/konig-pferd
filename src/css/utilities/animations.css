@@ -1,0 +1,60 @@
+/* from left opacity stagger */
+.hidden-left {
+  opacity: 0;
+  transform: translateX(-50%);
+}
+.hidden-left.active {
+  animation: left forwards 0.8s ease-out;
+}
+@keyframes left {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.hidden-right {
+  opacity: 0;
+  transform: translateX(50%);
+}
+.hidden-right.active {
+  animation: right forwards 0.8s ease-out;
+}
+@keyframes right {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.hidden-fade {
+  opacity: 0;
+}
+.hidden-fade.active {
+  animation: fade forwards 2s ease-out;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+[text-split] {
+  opacity: 0;
+}
+html.w-editor [text-split] {
+  opacity: 1;
+}
+.word {
+  overflow: hidden;
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+  transform-origin: bottom;
+}

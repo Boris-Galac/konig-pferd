@@ -5,32 +5,94 @@
 .icon {
   object-fit: contain;
 }
-.hero-overlay {
-  display: grid;
-  place-items: center;
-  background-color: #00000091;
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  animation: modal-video 2s forwards;
-}
-@keyframes modal-video {
-  from {
-    opacity: 0;
-    scale: 0;
-    clip-path: circle(0% at 50% 50%);
-  }
-  to {
-    clip-path: circle(70.7% at 50% 50%);
-    opacity: 1;
-    scale: 1;
-  }
-}
 .modal-video {
   width: 80%;
   height: 60%;
   border-radius: 1rem;
+  outline-offset: 11px;
+  outline: 2px solid #4300ff;
   box-shadow: 0 0 15rem #3e3edd;
+}
+@media (min-width: 1024px) {
+  .hero-overlay {
+    display: grid;
+    place-items: center;
+    background-color: #00000091;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    animation: modal-video 2s forwards;
+  }
+  @keyframes modal-video {
+    from {
+      opacity: 0;
+      scale: 0;
+      clip-path: circle(0% at 50% 50%);
+    }
+    to {
+      clip-path: circle(70.7% at 50% 50%);
+      opacity: 1;
+      scale: 1;
+    }
+  }
+}
+#baguetteBox-overlay .full-image img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  filter: drop-shadow(0 0 25px white);
+}
+
+/* lang overlay modal */
+.lang-question {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lang-question[data-active="true"] {
+  pointer-events: visible;
+  opacity: 1;
+}
+.lang-question[data-active="false"] {
+  animation: lang-question-false 0.3s forwards;
+}
+@keyframes lang-question-false {
+  from {
+    pointer-events: visible;
+    opacity: 1;
+  }
+  to {
+    pointer-events: none;
+    opacity: 0;
+  }
+}
+.lang-question__modal {
+  display: grid;
+  gap: 3rem;
+}
+.lang-question__option-btn {
+  color: #fff;
+  transition: 0.3s;
+}
+.lang-question__option-btn:hover {
+  filter: brightness(1.5);
+  scale: 1.2;
+  cursor: pointer;
+}
+.lang-question__option-btn img {
+  width: min(50vw, 250px);
+  pointer-events: none;
+  filter: drop-shadow(0 0 20px black);
 }

@@ -37,3 +37,9 @@
 .price-card--inkl-p {
   margin-left: 32px;
 }
+@media (min-width: 1024px) {
+  .price-card {
+    width: 40%;
+    max-width: 25rem;
+  }
+}

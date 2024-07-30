@@ -27,6 +27,7 @@
 }
 .offer-card__paragraph {
   font-weight: 100;
+  opacity: 0.8;
 }
 @media (min-width: 1300px) {
   .offer__wrapper {

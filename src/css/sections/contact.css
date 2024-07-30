@@ -1,5 +1,3 @@
-.contact {
-}
 .contact::before {
   content: "";
   position: absolute;
@@ -11,7 +9,6 @@
   background-attachment: fixed;
   z-index: -1;
 }
-
 .contact__wrapper {
   display: flex;
   flex-direction: column;
@@ -102,8 +99,7 @@
 }
 .socials-paragraph {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.contact-socials {
+  font-size: clamp(1.1rem, 7vw, 1.5rem);
 }
 .contact__phone-call {
   display: flex;
@@ -115,7 +111,7 @@
 }
 .body-overlay::after {
   content: "";
-  position: absolute;
+  position: fixed;
   inset: 0;
   z-index: 0;
   width: 100%;
@@ -129,5 +125,15 @@
   }
   to {
     background-color: #000000c2;
+  }
+}
+@media (min-width: 1024px) {
+  .contact__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .contact__wrapper > * {
+    flex: 1;
   }
 }

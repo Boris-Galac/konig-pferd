@@ -83,3 +83,8 @@ a {
 .contact .section-h2-heading::after {
   background-color: var(--white);
 }
+.tab-paragraph {
+  color: var(--dark-font);
+  margin: auto;
+  line-height: 160%;
+}

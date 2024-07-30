@@ -17,6 +17,10 @@ button {
   gap: 1rem;
   color: var(--white);
   background: linear-gradient(to right, hsl(39, 38%, 39%), #477183);
+  transition: 0.25s;
+}
+.hero__cta:hover {
+  outline-offset: 5px;
 }
 .play-thumbnail-icon {
   position: absolute;
@@ -25,8 +29,12 @@ button {
   left: 50%;
 }
 .play-video-btn {
+  transition: 0.3s;
   cursor: pointer;
-  filter: drop-shadow(0 0 5px white);
+  filter: drop-shadow(0 0 5px var(--white));
+}
+.play-video-btn:hover {
+  filter: drop-shadow(5px 5px 15px var(--white));
 }
 .play-video-btn > * {
   pointer-events: none;
@@ -36,6 +44,14 @@ button {
   border-radius: 10px;
   outline: 3px solid var(--white);
   box-shadow: 0 0 1rem var(--white);
+  cursor: pointer;
+  transition: 0.25s;
+}
+.thumbnail-interview-btn:hover {
+  opacity: 0.8;
+}
+.thumbnail-interview-btn > * {
+  pointer-events: none;
 }
 .thumbnail-interview-btn--desktop {
   display: none;
@@ -69,6 +85,17 @@ button {
 .submit-btn:hover {
   background-color: var(--dark-font);
 }
+.saddles-tab-btn {
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--white);
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.saddles-tab-btn:hover {
+  text-shadow: 0 0 20px var(--white);
+}
 @media (min-width: 1152px) {
   .thumbnail-interview-btn--mobile {
     display: none;
@@ -85,5 +112,9 @@ button {
     flex-direction: column;
     gap: 0.5rem;
     justify-content: space-around;
+  }
+  .saddles-tab-btn {
+    font-size: 19px;
+    font-weight: 700;
   }
 }
