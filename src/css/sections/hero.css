@@ -34,7 +34,7 @@
 .hero__headline {
   text-transform: uppercase;
   font-weight: 300;
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(1rem, 7vw, 6rem);
 }
 .hero__language-dropdown {
   position: absolute;
@@ -61,12 +61,8 @@
   background-color: #ffffff17;
   backdrop-filter: blur(5px);
 }
-.hero__footer-wrapper {
-}
 .hero__footer-row {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-}
-.hero__footer-subheadline {
 }
