@@ -121,6 +121,24 @@ button {
     inset: -20px;
   }
 }
+.back-to-top-btn {
+  transition: 0.3s;
+  position: fixed;
+  bottom: 2.2rem;
+  left: 2rem;
+  z-index: 10;
+}
+.back-to-top-btn[data-visible="false"] {
+  opacity: 0;
+  pointer-events: none;
+}
+.back-to-top-btn[data-visible="true"] {
+  opacity: 1;
+  pointer-events: visible;
+}
+.back-to-top-btn img {
+  pointer-events: none;
+}
 @media (min-width: 1152px) {
   .thumbnail-interview-btn--mobile {
     display: none;

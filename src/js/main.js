@@ -586,3 +586,18 @@ brands offered:`;
   element(".kontakt--submit").innerText = `Send request`;
   element(".kontakt--socials-heading").innerText = `See you on social networks`;
 }
+
+//// BACK TO TOP
+
+const backToTopbtn = document.querySelector(".back-to-top-btn");
+
+backToTopbtn.addEventListener("click", (e) => {
+  window.scroll({
+    top: 0,
+  });
+});
+window.addEventListener("scroll", (e) => {
+  if (window.scrollY > 150) {
+    backToTopbtn.setAttribute("data-visible", "true");
+  } else backToTopbtn.setAttribute("data-visible", "false");
+});
