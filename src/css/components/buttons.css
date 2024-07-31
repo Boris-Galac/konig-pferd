@@ -6,8 +6,6 @@ button {
   justify-content: center;
 }
 .hero__cta {
-  /* padding-inline: 2rem; */
-  /* padding-block: 1rem; */
   padding-inline: 5vw;
   padding-block: 2vh;
   width: max-content;
@@ -129,6 +127,7 @@ button {
   }
   .thumbnail-interview-btn--desktop {
     display: block;
+    margin-right: 8rem;
   }
   .hero__footer-wrapper {
     display: flex;
@@ -143,5 +142,14 @@ button {
   .saddles-tab-btn {
     font-size: 19px;
     font-weight: 700;
+  }
+  .hero__cta {
+    font-size: 20px;
+    padding: 1rem 2rem;
+  }
+  .call-web-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 44px;
   }
 }

@@ -290,6 +290,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.querySelectorAll(".thumbnail-interview-btn").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    window.open(
+      "https://www.youtube.com/watch?v=lc7nIO1WrYE&t=228s&ab_channel=DarkoZo%C5%A1ak",
+      "_blank"
+    );
+  });
+});
+
 function de() {
   element(".hero--cta").innerText = "Entdecken Sie Ihren Sattel";
   element(
